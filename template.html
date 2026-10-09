@@ -1,0 +1,196 @@
+<title>subbus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<style>
+/* Layout: one black terminal column, Amiga-style ASCII headers. Deliberately dark-only. */
+:root {
+  --bg: #000;
+  --fg: #b4b4b4;
+  --dim: #6b6b6b;
+  --hi: #fff;
+  --mono: "VT323", "Topaz", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 19px; line-height: 1.2; }
+.wrap { max-width: 34rem; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+pre { font: inherit; margin: 0; white-space: pre; }
+.logo { font-size: 16px; line-height: 1; color: var(--hi); overflow: hidden; }
+button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; padding: 0; }
+button { cursor: pointer; }
+:focus-visible { outline: 1px dashed var(--fg); outline-offset: 2px; }
+.dim { color: var(--dim); }
+
+.nav { margin-top: 24px; display: grid; gap: 2px; }
+.nav .row { display: flex; flex-wrap: wrap; gap: 0 1.5ch; }
+.nav button { color: var(--dim); }
+.nav button:hover { color: var(--fg); }
+.nav button[aria-pressed="true"] { color: var(--hi); }
+.nav button[aria-pressed="true"]::before { content: "-[ "; }
+.nav button[aria-pressed="true"]::after { content: " ]-"; }
+.search { display: flex; gap: 1ch; margin-top: 6px; }
+.search input { flex: 1; min-width: 0; font-size: 19px; }
+.search input::placeholder { color: var(--dim); }
+
+.day { margin-top: 28px; }
+.day-head { color: var(--hi); position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 4px; }
+.rule { overflow: hidden; white-space: nowrap; color: var(--dim); }
+.hdr { color: var(--hi); margin-bottom: 6px; }
+.ev { display: grid; grid-template-columns: 3.6em 5.5ch 1fr; column-gap: 1.5ch; align-items: start; padding-block: 8px; cursor: pointer; }
+.img { width: 3.6em; height: 3.6em; border: 1px solid var(--dim); width: 3.6em; height: 4.5em; background: var(--dim) center / cover no-repeat; }
+.ev > div:last-child { min-width: 0; overflow-wrap: anywhere; }
+.ev .t { color: var(--hi); }
+.ev:hover .t { text-decoration: underline; }
+.desc { margin-top: 6px; }
+.ongoing { margin-top: 28px; }
+.ongoing a { color: inherit; text-decoration: none; }
+.ongoing a:hover { text-decoration: underline; }
+.desc a { color: var(--fg); }
+
+.send { margin-top: 48px; }
+.send form { display: grid; gap: 6px; margin-top: 10px; }
+.send label { display: flex; gap: 1ch; }
+.send input { flex: 1; min-width: 0; font-size: 19px; border-bottom: 1px dashed var(--dim); }
+.send button { justify-self: start; margin-top: 8px; }
+.send button:hover { color: var(--hi); text-decoration: underline; }
+.empty { margin-top: 28px; }
+footer { margin-top: 48px; }
+</style>
+
+<div class="wrap">
+<pre class="logo" id="logo" aria-label="subbus"> ________  ___  ___  ________  ________  ___  ___  ________      
+|\   ____\|\  \|\  \|\   __  \|\   __  \|\  \|\  \|\   ____\     
+\ \  \___|\ \  \\\  \ \  \|\ /\ \  \|\ /\ \  \\\  \ \  \___|_    
+ \ \_____  \ \  \\\  \ \   __  \ \   __  \ \  \\\  \ \_____  \   
+  \|____|\  \ \  \\\  \ \  \|\  \ \  \|\  \ \  \\\  \|____|\  \  
+    ____\_\  \ \_______\ \_______\ \_______\ \_______\____\_\  \ 
+   |\_________\|_______|\|_______|\|_______|\|_______|\_________\
+   \|_________|                                      \|_________|</pre>
+
+<nav class="nav" aria-label="filter">
+  <div class="row" id="when"></div>
+  <div class="row" id="cats"></div>
+  <label class="search"><span class="dim">&gt;</span><input id="q" type="search" placeholder="søk" autocomplete="off" aria-label="søk"></label>
+</nav>
+
+<section class="ongoing" id="ongoing"></section>
+<main id="feed" aria-live="polite"></main>
+
+
+<footer class="dim"><pre>· subbus ·</pre>oppdatert <span id="updated"></span>.</footer>
+</div>
+
+<script>
+const DATA = /*DATA*/;
+const EVENTS = DATA.events;
+
+const WHENS = [["all","alt"],["today","i dag"],["weekend","helga"],["week","uka"]];
+const CATS = ["alt","konsert","klubb","kunst","scene","film","ord","annet"];
+const DAYS = ["søn","man","tir","ons","tor","fre","lør"];
+
+const today = new Date(); today.setHours(0,0,0,0);
+EVENTS.forEach((e,i) => {
+  e.id = i;
+  const [y,m,d] = e.date.split("-").map(Number);
+  e.dt = new Date(y, m-1, d);
+  e.d = Math.round((e.dt - today) / 864e5);
+});
+
+const state = { q:"", when:"all", cat:"alt", open:new Set() };
+try { const s = JSON.parse(localStorage.getItem("subbus") || "{}"); if (s.when) state.when = s.when; if (CATS.includes(s.cat)) state.cat = s.cat; } catch(e) {}
+const save = () => { try { localStorage.setItem("subbus", JSON.stringify({ when:state.when, cat:state.cat })); } catch(e) {} };
+
+function chips(id, items, key) {
+  const el = document.getElementById(id);
+  items.forEach(it => {
+    const [val, label] = Array.isArray(it) ? it : [it, it];
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = label; b.dataset.val = val; b.dataset.key = key;
+    b.addEventListener("click", () => { state[key] = val; save(); render(); });
+    el.appendChild(b);
+  });
+}
+chips("when", WHENS, "when"); chips("cats", CATS, "cat");
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+
+function inWhen(e) {
+  if (e.d < 0) return false;
+  if (state.when === "today") return e.d === 0;
+  if (state.when === "week") return e.d < 7;
+  if (state.when === "weekend") {
+    const dow = today.getDay();
+    const start = dow === 6 ? -1 : dow === 0 ? -2 : (5 - dow);
+    return e.d >= Math.max(0, start) && e.d <= start + 2;
+  }
+  return true;
+}
+const pad = n => String(n).padStart(2, "0");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// Fallback picture for events without an image: a small generated colour field.
+const THUMBS = {};
+function thumb(seed) {
+  if (THUMBS[seed]) return THUMBS[seed];
+  let a = seed * 9301 + 49297;
+  const rnd = () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  const N = 96, c = document.createElement("canvas"); c.width = c.height = N;
+  const g = c.getContext("2d"), h = rnd() * 360;
+  g.fillStyle = `hsl(${h} 70% 40%)`; g.fillRect(0, 0, N, N);
+  for (let i = 0; i < 4; i++) { g.fillStyle = `hsl(${(h + 120 + rnd() * 120) % 360} 80% ${40 + rnd() * 40}%)`; g.beginPath(); g.arc(rnd() * N, rnd() * N, 8 + rnd() * 30, 0, 7); g.fill(); }
+  return THUMBS[seed] = c.toDataURL();
+}
+
+function renderOngoing() {
+  const el = document.getElementById("ongoing");
+  if (!DATA.ongoing.length) return;
+  el.innerHTML = `<pre class="hdr">pågår:\n<span class="dim">~~~~~~</span></pre>` + DATA.ongoing.map(o =>
+    `<div><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a><br><span class="dim">${esc(o.venue)}, til ${esc(o.until)}</span></div>`).join('<div style="height:8px"></div>');
+}
+
+function render() {
+  document.querySelectorAll(".nav button").forEach(b => b.setAttribute("aria-pressed", state[b.dataset.key] === b.dataset.val));
+  const list = EVENTS.filter(e =>
+    (state.cat === "alt" || e.cat === state.cat) && inWhen(e) &&
+    (!state.q || [e.title, e.venue, e.actor, e.desc].join(" ").toLowerCase().includes(state.q))
+  );
+  const feed = document.getElementById("feed");
+  if (!list.length) { feed.innerHTML = '<p class="empty dim">ingenting her.</p>'; return; }
+
+  let html = "", cur = null;
+  list.forEach(e => {
+    if (e.date !== cur) {
+      if (cur !== null) html += "</section>";
+      cur = e.date;
+      const label = `${DAYS[e.dt.getDay()]} ${pad(e.dt.getDate())}.${pad(e.dt.getMonth() + 1)}${e.d === 0 ? " · i dag" : e.d === 1 ? " · i morgen" : ""}:`;
+      html += `<section class="day"><pre class="day-head">${label}\n<span class="dim">${"~".repeat(label.length)}</span></pre>`;
+    }
+    const open = state.open.has(e.id);
+    const who = e.actor && !e.actor.startsWith(e.venue) ? `${esc(e.venue)} / ${esc(e.actor)}` : esc(e.venue);
+    html += `<div class="ev" role="button" tabindex="0" data-id="${e.id}" aria-expanded="${open}">
+      <span class="img" aria-hidden="true" style="background-image:url(${e.img || thumb(e.id)})"></span>
+      <span class="t">${e.t || '<span class="dim">--:--</span>'}</span>
+      <div><span class="t">${esc(e.title)}</span><br>${who}<br><span class="dim">${e.cat}</span>${open ? `<div class="desc">${e.desc ? esc(e.desc) + "<br>" : ""}<a href="${esc(e.url)}" target="_blank" rel="noopener">til arrangementet -&gt;</a></div>` : ""}</div>
+    </div>`;
+  });
+  feed.innerHTML = html + "</section>";
+}
+function toggle(el) { const id = +el.dataset.id; state.open.has(id) ? state.open.delete(id) : state.open.add(id); render(); }
+const feedEl = document.getElementById("feed");
+feedEl.addEventListener("click", ev => { if (ev.target.closest("a")) return; const el = ev.target.closest(".ev"); if (el) toggle(el); });
+feedEl.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList.contains("ev")) { ev.preventDefault(); toggle(ev.target); } });
+
+
+function fitLogo() {
+  const el = document.getElementById("logo"); el.style.fontSize = "16px";
+  const w = el.parentElement.clientWidth, sw = el.scrollWidth;
+  if (sw > w) el.style.fontSize = (16 * w / sw).toFixed(2) + "px";
+}
+addEventListener("resize", fitLogo);
+document.fonts && document.fonts.ready.then(fitLogo);
+fitLogo();
+document.getElementById("updated").textContent = DATA.updated || "";
+renderOngoing();
+render();
+</script>

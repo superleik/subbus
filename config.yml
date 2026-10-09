@@ -1,0 +1,41 @@
+# subbus – innstillinger
+#
+# Hver kilde er enten
+#   auto:   alt publiseres direkte
+#   review: alt havner i godkjenningslista (GitHub-saken «subbus: til godkjenning»)
+# Ordene under «alltid_ja» og «alltid_nei» sjekkes mot tittelen (store/små bokstaver spiller ingen rolle).
+# Det er regulære uttrykk, så | betyr «eller». Sett alltid anførselstegn rundt.
+
+kilder:
+  risk: auto
+  opdahl: auto
+  kunsthall: auto
+  litteraturhuset: review
+  folken: review
+  tou: review
+
+# Publiseres alltid, også fra review-kilder
+alltid_ja:
+  - "strømklang"
+  - "nymusikk"
+  - "skoddajazz"
+  - "filmklubb"
+  - "grottedans"
+  - "electronica meetup"
+  - "maskindans"
+  - "open mic"
+
+# Vises aldri
+alltid_nei:
+  - "quiz"
+  - "stand ?up"
+  - "improworkshop"
+  - "linedance"
+  - "tribute"
+  - "musikkbingo"
+  - "^utstilling:"          # Tou legger inn hver utstillingsdag som eget arrangement
+  - "silent bookclub|morgenlesing|shut up and write"
+  - "avsparksmøte"
+
+# Hvor langt frem i tid feeden viser (dager)
+dager_frem: 90

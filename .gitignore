@@ -1,0 +1,6 @@
+.venv/
+.cache/
+site/
+__pycache__/
+data/godkjenning.md
+.DS_Store
