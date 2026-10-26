@@ -17,7 +17,7 @@
 body { background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 19px; line-height: 1.2; }
 .wrap { max-width: 34rem; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
 pre { font: inherit; margin: 0; white-space: pre; }
-.logo { font-size: 16px; line-height: 1; color: var(--hi); overflow: hidden; }
+.logo { font-size: 24px; line-height: 1.05; color: var(--hi); overflow: hidden; }
 button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; padding: 0; }
 button { cursor: pointer; }
 :focus-visible { outline: 1px dashed var(--fg); outline-offset: 2px; }
@@ -60,14 +60,10 @@ footer { margin-top: 48px; }
 </style>
 
 <div class="wrap">
-<pre class="logo" id="logo" aria-label="subbus"> ________  ___  ___  ________  ________  ___  ___  ________      
-|\   ____\|\  \|\  \|\   __  \|\   __  \|\  \|\  \|\   ____\     
-\ \  \___|\ \  \\\  \ \  \|\ /\ \  \|\ /\ \  \\\  \ \  \___|_    
- \ \_____  \ \  \\\  \ \   __  \ \   __  \ \  \\\  \ \_____  \   
-  \|____|\  \ \  \\\  \ \  \|\  \ \  \|\  \ \  \\\  \|____|\  \  
-    ____\_\  \ \_______\ \_______\ \_______\ \_______\____\_\  \ 
-   |\_________\|_______|\|_______|\|_______|\|_______|\_________\
-   \|_________|                                      \|_________|</pre>
+<pre class="logo" id="logo" aria-label="subbus">                |       |
+  __|   |   |   __ \    __ \    |   |    __|
+\__ \   |   |   |   |   |   |   |   |  \__ \
+____/  \__,_|  _.__/   _.__/   \__,_|  ____/</pre>
 
 <nav class="nav" aria-label="filter">
   <div class="row" id="when"></div>
@@ -183,9 +179,9 @@ feedEl.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key ===
 
 
 function fitLogo() {
-  const el = document.getElementById("logo"); el.style.fontSize = "16px";
+  const el = document.getElementById("logo"); el.style.fontSize = "24px";
   const w = el.parentElement.clientWidth, sw = el.scrollWidth;
-  if (sw > w) el.style.fontSize = (16 * w / sw).toFixed(2) + "px";
+  if (sw > w) el.style.fontSize = (24 * w / sw).toFixed(2) + "px";
 }
 addEventListener("resize", fitLogo);
 document.fonts && document.fonts.ready.then(fitLogo);
