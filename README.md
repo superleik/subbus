@@ -1,6 +1,6 @@
 # subbus
 
-Kunst og kultur utenfor allfarvei i Stavanger, samlet i én kronologisk feed.
+Kunst og kultur på kantsonene i Stavanger, samlet i én kronologisk feed.
 
 ## Slik virker det
 
