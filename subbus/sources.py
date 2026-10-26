@@ -71,17 +71,20 @@ def folken():
     s = get("https://www.folken.no/folken/").text
     cats = {"Konsert": "konsert", "Film": "film", "Teater": "scene", "Comedy": "scene"}
     out = []
-    pat = re.compile(r"""<li class="list-item" data-type='([^']*)'>\s*<div class="image" style="background-image:url\(([^)]*)\);">.*?"""
-                     r"""<div class="title"><a href="([^"]+)">(.*?)</a>.*?fa-calendar-o[^>]*></i>\s*([^<]+?)\s*</div>"""
-                     r"""(?:(?:(?!list-item).)*?fa-clock-o[^>]*></i>\s*([^<]*?)\s*</div>)?""", re.S)
-    for typ, img, url, title, ds, tm in pat.findall(s):
-        p = ds.split()
-        month, day = MONTHS_EN[p[1].lower()], int(p[0])
-        year = int(p[2]) if len(p) > 2 else guess_year(month, day)
-        title = html.unescape(title)
+    # Hvert arrangement er en <li class="list-item fk-event" data-type="…"> med dato i <time datetime="YYYY-MM-DD">
+    for chunk in re.split(r'<li class="list-item', s)[1:]:
+        chunk = chunk.split("</li>")[0]
+        find = lambda p: (m := re.search(p, chunk, re.S)) and html.unescape(m[1]).strip()
+        url, title = find(r'fk-event__title"><a href="([^"]+)"'), find(r'fk-event__title"><a [^>]*>(.*?)</a>')
+        d = find(r'<time[^>]*datetime="(\d{4}-\d\d-\d\d)')
+        if not (url and title and d):
+            continue
+        typ = find(r'data-type="([^"]*)"') or ""
         actor = "Strømklang" if "strømklang" in title.lower() else "Folken"
-        out.append(dict(date=date(year, month, day).isoformat(), t=tm.strip(), title=title, venue="Folken",
-                        actor=actor, cat=cats.get(typ, "annet"), url=url, img=img, desc="", tags=typ.lower()))
+        out.append(dict(date=d, t=find(r'fk-event__time">([^<]*)<') or "", title=clean(re.sub("<[^>]+>", "", title)),
+                        venue="Folken", actor=actor, cat=cats.get(typ, "annet"), url=url,
+                        img=find(r'fk-event__image" src="([^"]+)"'), desc=find(r'fk-event__teaser">(.*?)</p>') or "",
+                        tags=typ.lower()))
     return out
 
 

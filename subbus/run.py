@@ -35,8 +35,11 @@ def fetch_all(cfg):
     cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
     for name in cfg["kilder"]:
         try:
-            cache[name] = SOURCES[name]()
-            print(f"{name}: {len(cache[name])} arrangementer")
+            items = SOURCES[name]()
+            if not items and cache.get(name):
+                raise ValueError("fant 0 arrangementer, har nettsiden endret seg?")
+            cache[name] = items
+            print(f"{name}: {len(items)} arrangementer")
         except Exception as x:
             print(f"{name}: FEIL ({x}), bruker forrige resultat", file=sys.stderr)
     cache_file.write_text(json.dumps(cache, ensure_ascii=False, indent=1))
