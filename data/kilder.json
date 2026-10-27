@@ -287,18 +287,6 @@
  ],
  "folken": [
   {
-   "date": "2026-10-26",
-   "t": "19:00",
-   "title": "Improworkshop med Stavanger Impro - Gratis!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17306-improworkshop-med-stavanger-impro-gratis",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017306/mediumWorkshop-lt.jpg.jpg",
-   "desc": "Hiv deg rundt og bli med Stavanger Impro på denne deilige galskapen!",
-   "tags": "teater"
-  },
-  {
    "date": "2026-10-27",
    "t": "20:00",
    "title": "FolkenQuiz - hver tirsdag!",
@@ -1189,18 +1177,6 @@
  ],
  "tou": [
   {
-   "date": "2026-10-28",
-   "t": "19:00",
-   "title": "Toraderkurs - Nybegynner!",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "annet",
-   "url": "https://www.touofficial.com/events/toraderkurs-nybegynner/SJcZE1YsCH",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_dEEOUjsjHT",
-   "desc": "Oppstart onsdag 28. oktober kl. 19.00 på Tou scene, i lokale Resepsjonen.",
-   "tags": "trekkspill kurs torader"
-  },
-  {
    "date": "2026-10-29",
    "t": "18:00",
    "title": "Utstillingsåpning: Sara Rønnbäck - Hur lockar på en varg",
@@ -1309,7 +1285,7 @@
    "tags": "contemporary art exhibition"
   },
   {
-   "date": "2026-11-01",
+   "date": "2026-11-02",
    "t": "19:00",
    "title": "Lesesirkel Scenekunst med Rosalind Goldberg",
    "venue": "Tou",
