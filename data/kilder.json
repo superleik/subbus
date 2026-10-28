@@ -275,30 +275,6 @@
  ],
  "folken": [
   {
-   "date": "2026-10-27",
-   "t": "20:00",
-   "title": "FolkenQuiz - hver tirsdag!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17215-folkenquiz-hver-tirsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017215/mediumFolkenquiz%20Linticket.jpg.jpg",
-   "desc": "Den tradisjonsrike quizen på Folken ruller hver tirsdag i Akvariet, Folkens fine bar i 1. etasje.",
-   "tags": "quiz"
-  },
-  {
-   "date": "2026-10-27",
-   "t": "21:00",
-   "title": "Skoddajazz #4: Bliss Quintet",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17402-skoddajazz-4-bliss-quintet",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017402/mediumbliss-lt.jpg.jpg",
-   "desc": "Skoddajazz er en nyoppstartet konsertserie i Stavanger, med fokus på å fremme original musikk under jazzparaplyen - den musikken som befinner seg i grenseland mellom sjangre.",
-   "tags": "konsert"
-  },
-  {
    "date": "2026-10-28",
    "t": "20:00",
    "title": "Standup i Grottene hver onsdag",
@@ -769,11 +745,11 @@
   {
    "date": "2026-11-26",
    "t": "20:00",
-   "title": "Kalandra",
+   "title": "Kalandra + support: Olga Amalie",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17283-kalandra",
+   "url": "https://www.folken.no/shows/17283-kalandra--support-olga-amalie",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017283/mediumkalandra-lt.jpg.jpg",
    "desc": "I 2026 feirer Kalandra sitt 15-årsjubileum, og den norsk-svenske kvartetten fortsetter å trollbinde publikum over hele Europa.",
    "tags": "konsert"
