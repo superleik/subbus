@@ -129,18 +129,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-10-29",
-   "t": "19:00",
-   "title": "\"The Cory Arcangel Hack\"",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/the-cory-arcangle-hack",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1792141133757-4QG8SQN27PHV1J4DE8SF/Cory+Arcangel+og+Eivind+R%C3%B8ssaak+%281%29.jpg",
-   "desc": "Arrangør: Stavanger Kunstmuseum og Litteraturhuset i Stavanger Kjøp billett",
-   "tags": ""
-  },
-  {
    "date": "2026-11-02",
    "t": "19:00",
    "title": "KI: Bør vi være livredde?",
@@ -150,6 +138,18 @@
    "url": "https://www.litthusstvg.no/program/ki-br-vi-vre-livredde",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1791960640579-CRT2NTAIQ3NP84Q0RPBA/nffo+ki-arr+nettside2.jpg",
    "desc": "Arrangør: Norsk faglitterær forfatter- og oversetterforening Kjøp billett",
+   "tags": ""
+  },
+  {
+   "date": "2026-11-03",
+   "t": "18:00",
+   "title": "Samlesing",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/samlesing",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793282651749-6RVOO1TKV18XYWIWN9T7/unsplash-image-7C2JUQRJ5hE.jpg",
+   "desc": "Arrangør: Litteraturhuset i Stavanger Påmelding",
    "tags": ""
   },
   {
@@ -285,18 +285,6 @@
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017358/medium04-lt.jpg.jpg",
    "desc": "",
    "tags": "film"
-  },
-  {
-   "date": "2026-10-30",
-   "t": "20:00",
-   "title": "Jazzjam, Folkens! #79",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17526-jazzjam-folkens-79",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017526/mediumjazzjam.jpg.jpg",
-   "desc": "Ta med hornet! Bruk øra!",
-   "tags": "student"
   },
   {
    "date": "2026-10-30",
@@ -613,11 +601,11 @@
   {
    "date": "2026-11-19",
    "t": "20:00",
-   "title": "Jazzjam, Folkens! #80",
+   "title": "Jazzjam, Folkens! #79",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "annet",
-   "url": "https://www.folken.no/shows/17527-jazzjam-folkens-8",
+   "url": "https://www.folken.no/shows/17527-jazzjam-folkens-79",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017527/mediumjazzjam.jpg.jpg",
    "desc": "Ta med hornet! Bruk øra!",
    "tags": "student"
@@ -1116,30 +1104,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-10-29",
-   "t": "18:00",
-   "title": "Utstillingsåpning: Sara Rønnbäck - Hur lockar på en varg",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "kunst",
-   "url": "https://www.touofficial.com/events/utstillings-pning-sara-r-nnb-ck-hur-lockar-p-en-varg/gbPNB9xFPF",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_7qByufDUE",
-   "desc": "Venue: Forhallen Tou  \nDates: 29 October – 1 November 2026  \nExhibition opening: Thursday, 29 October, 18:00 – 20:00  \nOpening Hours: Friday-Sunday, 12:00 – 16:00  \nFree admission",
-   "tags": "contemporary art exhibition"
-  },
-  {
-   "date": "2026-10-29",
-   "t": "19:00",
-   "title": "Nabolagsquiz med Øydis på Ry",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "annet",
-   "url": "https://www.touofficial.com/events/nabolagsquiz-med-ydis-p-ry/FpIZBRB7Dc",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_rWA1lGdjl",
-   "desc": "Nabolagsquiz holdes av ingen ringere enn Øydis Rake Hegg, som mange kanskje kjenner som en dyktig kunnskapsformidler på blant annet Martinique",
-   "tags": "quiz"
-  },
   {
    "date": "2026-10-30",
    "t": "12:00",
