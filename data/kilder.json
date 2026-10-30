@@ -148,7 +148,7 @@
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
    "url": "https://www.litthusstvg.no/program/samlesing",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793282651749-6RVOO1TKV18XYWIWN9T7/unsplash-image-7C2JUQRJ5hE.jpg",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793364786820-DD2VGY0WES2POYTMDTU3/unsplash-image-7C2JUQRJ5hE.jpg",
    "desc": "Arrangør: Litteraturhuset i Stavanger Påmelding",
    "tags": ""
   },
@@ -174,6 +174,18 @@
    "url": "https://www.litthusstvg.no/program/morgenlesing-p-litteraturhuset-november",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/9996acbc-dd6b-40df-aa08-0a4022ebef70/Morgenlesing+p%C3%A5+litteraturhuset.png",
    "desc": "Arrangør: Tekstallianse og Litthusstvg Gratis og ingen påmelding",
+   "tags": ""
+  },
+  {
+   "date": "2026-11-07",
+   "t": "12:00",
+   "title": "Forebygging av voldelig ekstremisme gjennom dialog, forsoning og foreldreskap – på to sider av en terrorkonflikt",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/marengarden-fredsbyggende-stiftelse",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793368647339-A4LUXB92HOB49X6DBXIR/474078446_1120848449422148_7233479771913325514_n.jpg",
+   "desc": "Arrangør: Marengarden Fredsbyggende stiftelse Dørene åpner kl 11.30 Kjøp billett",
    "tags": ""
   },
   {
@@ -225,6 +237,18 @@
    "tags": ""
   },
   {
+   "date": "2026-11-25",
+   "t": "19:00",
+   "title": "Fra Drøm til Debut",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/fra-drm-til-debut",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793353769990-B0NJWTYO7TNBYS6SC3HK/fra+dr%C3%B8m+til+debut+nettside.jpg",
+   "desc": "Arrangør: Ungt Programråd Litteraturhuset Kjøp billett",
+   "tags": ""
+  },
+  {
    "date": "2026-11-26",
    "t": "19:00",
    "title": "Lansering: “Kjelkemarsjen” av Nils Helge Sørgård og “Innenfor 2” av Erling Roland",
@@ -246,6 +270,18 @@
    "url": "https://www.litthusstvg.no/program/silent-bookclub-stille-bokklubb-november",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1761211073940-55CQ7KIKM33QUIUJFGJZ/Silent+Bookclub+.png",
    "desc": "Arrangør: Silent Bookclub Stavanger og Litthusstvg",
+   "tags": ""
+  },
+  {
+   "date": "2026-12-02",
+   "t": "19:00",
+   "title": "Skeiv Mamma og Streit Ikkje-mor",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/skeiv-mamma-og-streit-ikkje-mor",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793366632336-15O2OI639T1T62U0KY28/Skeiv+mamma+og+streit+ikkje-mor.jpg",
+   "desc": "Arrangør: Litteraturhuset i Stavanger Kjøp billett",
    "tags": ""
   },
   {
@@ -1092,18 +1128,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-10-30",
-   "t": "12:00",
-   "title": "Utstilling: Sara Rønnbäck - Hur lockar på en varg",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "kunst",
-   "url": "https://www.touofficial.com/events/utstilling-sara-r-nnb-ck-hur-lockar-p-en-varg/rflRQXjBJ1",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_7qByufDUE",
-   "desc": "Venue: Forhallen Tou  \nDates: 29 October – 1 November 2026  \nExhibition opening: Thursday, 29 October, 18:00 – 20:00  \nOpening Hours: Friday-Sunday, 12:00 – 16:00  \nFree admission",
-   "tags": "contemporary art exhibition"
-  },
   {
    "date": "2026-10-30",
    "t": "20:00",
