@@ -184,8 +184,20 @@
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
    "url": "https://www.litthusstvg.no/program/marengarden-fredsbyggende-stiftelse",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793368647339-A4LUXB92HOB49X6DBXIR/474078446_1120848449422148_7233479771913325514_n.jpg",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/138db1b6-666c-468b-a486-ef5671a13231/marengaren+nettside.jpg",
    "desc": "Arrangør: Marengarden Fredsbyggende stiftelse Dørene åpner kl 11.30 Kjøp billett",
+   "tags": ""
+  },
+  {
+   "date": "2026-11-09",
+   "t": "00:30",
+   "title": "Betydningen av bevegelse et performanceforedrag",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/betydningen-av-bevegelse-et-performanceforedrag",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/08ae05ec-7e57-47e4-94d4-5f2b5b02e046/Foto-Danseinformasjonen.jpeg",
+   "desc": "Arrangør: Regional Arena for Samtidsdans Fribillett",
    "tags": ""
   },
   {
@@ -294,6 +306,18 @@
    "url": "https://www.litthusstvg.no/program/julemarked-1",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793009665296-6SZJC6S7K83MAXG7F1CU/855833306_1963370038333911_8625620840489210167_n.jpg",
    "desc": "Arrangør: Elefant og Litteraturhuset i Stavanger",
+   "tags": ""
+  },
+  {
+   "date": "2026-12-10",
+   "t": "19:00",
+   "title": "Kneecap - foredrag med Frida Fliflet",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/foredrag-om-kneecap-med-journalist-frida-fliflet",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/965ee523-a0fc-4108-944b-8f4ba22ead0b/Kneecap+frida+fliflet.jpg",
+   "desc": "Arrangør: Ungt Programråd Litteraturhuset Kjøp billett",
    "tags": ""
   },
   {
