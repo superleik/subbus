@@ -129,18 +129,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-02",
-   "t": "19:00",
-   "title": "KI: Bør vi være livredde?",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/ki-br-vi-vre-livredde",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1791960640579-CRT2NTAIQ3NP84Q0RPBA/nffo+ki-arr+nettside2.jpg",
-   "desc": "Arrangør: Norsk faglitterær forfatter- og oversetterforening Kjøp billett",
-   "tags": ""
-  },
-  {
    "date": "2026-11-03",
    "t": "18:00",
    "title": "Samlesing",
@@ -334,30 +322,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-02",
-   "t": "19:00",
-   "title": "AKKS: Musikkbingo og minikonsert",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17247-akks-musikkbingo-og-minikonsert",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017247/mediummusikkbingo.jpg.jpg",
-   "desc": "To spennende runder med musikkbingo og fete premier.",
-   "tags": "annet"
-  },
-  {
-   "date": "2026-11-02",
-   "t": "19:00",
-   "title": "Improworkshop med Stavanger Impro - Gratis!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17307-improworkshop-med-stavanger-impro-gratis",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017307/mediumWorkshop-lt.jpg.jpg",
-   "desc": "Hiv deg rundt og bli med Stavanger Impro på denne deilige galskapen!",
-   "tags": "teater"
-  },
   {
    "date": "2026-11-03",
    "t": "20:00",
@@ -1116,18 +1080,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-02",
-   "t": "19:00",
-   "title": "Lesesirkel Scenekunst med Rosalind Goldberg",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "scene",
-   "url": "https://www.touofficial.com/events/lesesirkel-scenekunst-med-rosalind-goldberg/vM9PK6tb8U",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_hQwVwGtak",
-   "desc": "Denne kvelden ledes lesesirkelen av koreograf Rosalind Goldberg. Sammen utforsker vi en tekst hun har valgt ut, gjennom lesning og åpen samtale. Det kreves ingen forkunnskaper, bare nysgjerrighet og lyst til å delta i samtalen.",
-   "tags": "scenekunst"
-  },
   {
    "date": "2026-11-05",
    "t": "18:30",
