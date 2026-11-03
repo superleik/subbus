@@ -129,18 +129,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-03",
-   "t": "18:00",
-   "title": "Samlesing",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/samlesing",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793364786820-DD2VGY0WES2POYTMDTU3/unsplash-image-7C2JUQRJ5hE.jpg",
-   "desc": "Arrangør: Litteraturhuset i Stavanger Påmelding",
-   "tags": ""
-  },
-  {
    "date": "2026-11-04",
    "t": "19:00",
    "title": "Nobel lesesirkel: Hvem er egentlig Anne Carson?",
@@ -165,18 +153,6 @@
    "tags": ""
   },
   {
-   "date": "2026-11-07",
-   "t": "12:00",
-   "title": "Forebygging av voldelig ekstremisme gjennom dialog, forsoning og foreldreskap – på to sider av en terrorkonflikt",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/marengarden-fredsbyggende-stiftelse",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/138db1b6-666c-468b-a486-ef5671a13231/marengaren+nettside.jpg",
-   "desc": "Arrangør: Marengarden Fredsbyggende stiftelse Dørene åpner kl 11.30 Kjøp billett",
-   "tags": ""
-  },
-  {
    "date": "2026-11-09",
    "t": "12:30",
    "title": "Betydningen av bevegelse et performanceforedrag",
@@ -186,6 +162,18 @@
    "url": "https://www.litthusstvg.no/program/betydningen-av-bevegelse-et-performanceforedrag",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/08ae05ec-7e57-47e4-94d4-5f2b5b02e046/Foto-Danseinformasjonen.jpeg",
    "desc": "Arrangør: Regional Arena for Samtidsdans Fribillett",
+   "tags": ""
+  },
+  {
+   "date": "2026-11-14",
+   "t": "12:00",
+   "title": "Forebygging av voldelig ekstremisme gjennom dialog, forsoning og foreldreskap – på to sider av en terrorkonflikt",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/marengarden-fredsbyggende-stiftelse",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/138db1b6-666c-468b-a486-ef5671a13231/marengaren+nettside.jpg",
+   "desc": "Arrangør: Marengarden Fredsbyggende stiftelse Dørene åpner kl 11.30 Kjøp billett",
    "tags": ""
   },
   {
