@@ -178,7 +178,7 @@
   },
   {
    "date": "2026-11-09",
-   "t": "00:30",
+   "t": "12:30",
    "title": "Betydningen av bevegelse et performanceforedrag",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
@@ -1139,6 +1139,18 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_GmzPR6DJb",
    "desc": "Cecilie Lindemann Steen er en av Norges mest benyttetede og erfarne dansere. Gjennom over 30 år har hun arbeidet med de fleste av landets mest toneangivende koreografer.  ",
    "tags": "dans foredrag"
+  },
+  {
+   "date": "2026-11-10",
+   "t": "18:30",
+   "title": "Lesesirkel Scenekunst: med Cecilie Lindeman Steen",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "scene",
+   "url": "https://www.touofficial.com/events/lesesirkel-scenekunst-med-cecilie-lindeman-steen/XhhW3ykGuV",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_2ybh0ZCVh",
+   "desc": "Lesesirkel Scenekunst er en uformell møteplass for samtale og refleksjon rundt tekster som berører scenekunstfeltet. Hver gang inviterer vi en kunstner eller fagperson til å velge en tekst som utgangspunkt for samtalen.",
+   "tags": "scenekunst"
   },
   {
    "date": "2026-11-11",
