@@ -287,11 +287,11 @@
   {
    "date": "2026-12-10",
    "t": "19:00",
-   "title": "Kneecap - foredrag med Frida Fliflet",
+   "title": "Halvliter med Kunnskap: Kneecap",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/foredrag-om-kneecap-med-journalist-frida-fliflet",
+   "url": "https://www.litthusstvg.no/program/halvliter-med-kunnskap-kneecap",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/965ee523-a0fc-4108-944b-8f4ba22ead0b/Kneecap+frida+fliflet.jpg",
    "desc": "Arrangør: Ungt Programråd Litteraturhuset Kjøp billett",
    "tags": ""
@@ -310,18 +310,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-03",
-   "t": "20:00",
-   "title": "FolkenQuiz - hver tirsdag!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17216-folkenquiz-hver-tirsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017216/mediumFolkenquiz%20Linticket.jpg.jpg",
-   "desc": "Den tradisjonsrike quizen på Folken ruller hver tirsdag i Akvariet, Folkens fine bar i 1. etasje.",
-   "tags": "quiz"
-  },
   {
    "date": "2026-11-04",
    "t": "19:30",
