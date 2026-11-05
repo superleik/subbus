@@ -1021,18 +1021,6 @@
  ],
  "tou": [
   {
-   "date": "2026-11-05",
-   "t": "18:30",
-   "title": "Gorrlaus",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "konsert",
-   "url": "https://www.touofficial.com/events/gorrlaus/QVQm0Vj4uW",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/gorrlaus-16602_wXHwH6uzVI",
-   "desc": "125 års jubileum for folkemusikaren, radioverten, komponisten og musikkforskaren, Eivind Groven.",
-   "tags": "musikk"
-  },
-  {
    "date": "2026-11-06",
    "t": "20:00",
    "title": "Emelie Hollow",
@@ -1079,6 +1067,18 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_GmzPR6DJb",
    "desc": "Cecilie Lindemann Steen er en av Norges mest benyttetede og erfarne dansere. Gjennom over 30 år har hun arbeidet med de fleste av landets mest toneangivende koreografer.  ",
    "tags": "dans foredrag"
+  },
+  {
+   "date": "2026-11-09",
+   "t": "18:30",
+   "title": "Blå Mandag: Konsert + Jazz Jam",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "konsert",
+   "url": "https://www.touofficial.com/events/bl-mandag-konsert-jazz-jam/AZLpVHuMS1",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_BHWJceWds",
+   "desc": "Månedlig jazzkveld på Øst: først konsert, så jam. Her er terskelen lav, stemningen avslappet, og det er like fint å komme for å lytte som å ta med instrumentet og bli med utover kvelden.",
+   "tags": "konsert jazz jam"
   },
   {
    "date": "2026-11-10",
