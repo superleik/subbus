@@ -129,18 +129,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-05",
-   "t": "07:30",
-   "title": "Morgenlesing på Litteraturhuset: November",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/morgenlesing-p-litteraturhuset-november",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/9996acbc-dd6b-40df-aa08-0a4022ebef70/Morgenlesing+p%C3%A5+litteraturhuset.png",
-   "desc": "Arrangør: Tekstallianse og Litthusstvg Gratis og ingen påmelding",
-   "tags": ""
-  },
-  {
    "date": "2026-11-09",
    "t": "12:30",
    "title": "Betydningen av bevegelse et performanceforedrag",
@@ -298,30 +286,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-04",
-   "t": "19:30",
-   "title": "Filmklubb: Utama (Bolivia, 2022)",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "film",
-   "url": "https://www.folken.no/shows/17183-filmklubb-utama-bolivia-222",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017183/medium05-lt.jpg.jpg",
-   "desc": "",
-   "tags": "film"
-  },
-  {
-   "date": "2026-11-04",
-   "t": "20:00",
-   "title": "Standup i Grottene hver onsdag",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17235-standup-i-grottene-hver-onsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017235/mediumGrottene-Folken.jpg.jpg",
-   "desc": "\"De nyaste gjør sitt besta, og de beste gjør sitt nyaste!\"",
-   "tags": "comedy"
-  },
   {
    "date": "2026-11-05",
    "t": "18:00",
@@ -947,6 +911,18 @@
    "tags": "konsert"
   },
   {
+   "date": "2027-02-20",
+   "t": "21:00",
+   "title": "Kakkmaddafakka",
+   "venue": "Folken",
+   "actor": "Folken",
+   "cat": "konsert",
+   "url": "https://www.folken.no/shows/17290-kakkmaddafakka",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017290/mediumkakk-lt.jpg.jpg",
+   "desc": "Kakkmaddafakka tar Hest 15-turneen til Stavanger og Folken!",
+   "tags": "konsert"
+  },
+  {
    "date": "2027-03-03",
    "t": "20:00",
    "title": "Morgan Wallen Tribute Band UK + support: Robbie McMinn",
@@ -1151,6 +1127,18 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_rWA1lGdjl",
    "desc": "Nabolagsquiz holdes av ingen ringere enn Øydis Rake Hegg, som mange kanskje kjenner som en dyktig kunnskapsformidler på blant annet Martinique",
    "tags": "quiz"
+  },
+  {
+   "date": "2026-11-18",
+   "t": "18:00",
+   "title": "Performance Kafé med Pia MYrvoLD",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/performance-kaf-med-pia-myrvold/Y2hgbwbWAE",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_qu45Cz2q8D",
+   "desc": "Fire ganger i året inviterer Performance Art Stavanger en utøvende performancekunstner til Performance Kafé. Sammen med ordstyrer og publikum dykker vi ned i interessante og relevante tema innen performance og kunstnerens egen virksomhet, hvor samtalen vil vandre, og hva som skjer underveis er helt ",
+   "tags": "performance visuellkunst pas"
   },
   {
    "date": "2026-11-21",
