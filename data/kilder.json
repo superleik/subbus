@@ -148,7 +148,7 @@
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
    "url": "https://www.litthusstvg.no/program/marengarden-fredsbyggende-stiftelse",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/138db1b6-666c-468b-a486-ef5671a13231/marengaren+nettside.jpg",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/d9225461-979c-4b58-87d1-cb84c820ffe6/marengaren+nettside+%281%29.jpg",
    "desc": "Arrangør: Marengarden Fredsbyggende stiftelse Dørene åpner kl 11.30 Kjøp billett",
    "tags": ""
   },
@@ -286,18 +286,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-05",
-   "t": "18:00",
-   "title": "TGR & Friends - Ski Film Festival",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "film",
-   "url": "https://www.folken.no/shows/17260-tgr--friends-ski-film-festival",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017260/mediumtgr-lt.jpg.jpg",
-   "desc": "En årlig ski film festival med noen av årets råeste og mest autentiske film.",
-   "tags": "film"
-  },
   {
    "date": "2026-11-06",
    "t": "20:00",
