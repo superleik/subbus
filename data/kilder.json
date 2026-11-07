@@ -287,30 +287,6 @@
  ],
  "folken": [
   {
-   "date": "2026-11-06",
-   "t": "20:00",
-   "title": "Wrath + support: Osmium + Ratnip",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17428-wrath--support-osmium--ratnip",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017428/mediumwrath-lt2.jpg.jpg",
-   "desc": "De siste årene har heksene i WRATH samlet en lojal fanskare av utskudd, pønkere, «Haugafolk» og metalheads i Norges musikkundergrunn.",
-   "tags": "konsert"
-  },
-  {
-   "date": "2026-11-06",
-   "t": "21:00",
-   "title": "Gåte",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/16789-gaate",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000016789/mediumgaaate-lt.jpg.jpg",
-   "desc": "Gåtes konserter er kjent for intensitet, der musikken bygger sitt eget univers og trekker publikum inn i en felles puls av urkraft og nærvær.",
-   "tags": "konsert"
-  },
-  {
    "date": "2026-11-07",
    "t": "19:00",
    "title": "Standup med Kjetil Melkevik",
@@ -1008,18 +984,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-06",
-   "t": "20:00",
-   "title": "Emelie Hollow",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "konsert",
-   "url": "https://www.touofficial.com/events/emelie-hollow/zeMAc35PKo",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/emilie-hollow-16511_GUkvt5MJJ",
-   "desc": "[Emelie Hollow](https://www.instagram.com/emeliehollow/) fra Vinterbro i Ås kommune var 12 år gammel da hun ga ut sin første egenskrevne låt, på Universal Music.",
-   "tags": "pop"
-  },
   {
    "date": "2026-11-07",
    "t": "19:00",
