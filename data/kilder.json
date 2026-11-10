@@ -275,18 +275,6 @@
  ],
  "folken": [
   {
-   "date": "2026-11-09",
-   "t": "19:00",
-   "title": "Improworkshop med Stavanger Impro - Gratis!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17308-improworkshop-med-stavanger-impro-gratis",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017308/mediumWorkshop-lt.jpg.jpg",
-   "desc": "Hiv deg rundt og bli med Stavanger Impro på denne deilige galskapen!",
-   "tags": "teater"
-  },
-  {
    "date": "2026-11-10",
    "t": "20:00",
    "title": "FolkenQuiz - hver tirsdag!",
@@ -336,7 +324,7 @@
   },
   {
    "date": "2026-11-12",
-   "t": "20:00",
+   "t": "19:00",
    "title": "Billy Meier",
    "venue": "Folken",
    "actor": "Folken",
@@ -960,18 +948,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-09",
-   "t": "18:30",
-   "title": "Blå Mandag: Konsert + Jazz Jam",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "konsert",
-   "url": "https://www.touofficial.com/events/bl-mandag-konsert-jazz-jam/AZLpVHuMS1",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_BHWJceWds",
-   "desc": "Månedlig jazzkveld på Øst: først konsert, så jam. Her er terskelen lav, stemningen avslappet, og det er like fint å komme for å lytte som å ta med instrumentet og bli med utover kvelden.",
-   "tags": "konsert jazz jam"
-  },
   {
    "date": "2026-11-10",
    "t": "18:30",
