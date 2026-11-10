@@ -337,12 +337,12 @@
   {
    "date": "2026-11-12",
    "t": "20:00",
-   "title": "Communic + Sublime Eyes + Mayfire",
+   "title": "Communic + Mayfire + Zebulon",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17255-communic--sublime-eyes--mayfire",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017255/mediumWOTN_FOLKEN_lt.jpg.jpg",
+   "url": "https://www.folken.no/shows/17255-communic--mayfire--zebulon",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017255/mediumcommu-lt.jpg.jpg",
    "desc": "En unik triple-bill med solide metalband.",
    "tags": "konsert"
   },
@@ -1019,6 +1019,18 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_jQRQgbwcnl",
    "desc": "Etter braksuksessen med debutalbumet \"Alt er nytt\" har [Kristi Brud](https://www.instagram.com/kristibrvd/) etablert seg som et av de mest spennende rockebandene i Norge. Platen ble belønnet med Spellemann for Årets Rockeplate i 2024, og pressen var unisont begeistret: VG, Aftenposten, Klassekampen ",
    "tags": "rock"
+  },
+  {
+   "date": "2026-11-24",
+   "t": "19:00",
+   "title": " Informasjonsmøte med scenekunstfeltet i Stavanger ",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "scene",
+   "url": "https://www.touofficial.com/events/informasjonsm-te-med-scenekunstfeltet-i-stavanger/pND1VDUmRp",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_JOsRM3368",
+   "desc": "Velkommen til møte om Kulturrådets ordningar for scenekunst. ",
+   "tags": "scenekunst møte fagprogram"
   },
   {
    "date": "2026-11-26",
