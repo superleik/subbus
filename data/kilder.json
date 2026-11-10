@@ -487,7 +487,7 @@
    "cat": "konsert",
    "url": "https://www.folken.no/shows/16951-stein-torleif-bjella",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000016951/mediumstb-lt.jpg.jpg",
-   "desc": "",
+   "desc": "Albumet \"Velkomen skodde\" har blitt hyllet som et karrierehøydepunkt av et sjeldent stor og samstemt anmelderkorps, som har trillet seksere og omtalt Hallingen som av vår tids viktigste låtskrivere.",
    "tags": "konsert"
   },
   {
@@ -948,18 +948,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-10",
-   "t": "18:30",
-   "title": "Lesesirkel Scenekunst: med Cecilie Lindeman Steen",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "scene",
-   "url": "https://www.touofficial.com/events/lesesirkel-scenekunst-med-cecilie-lindeman-steen/XhhW3ykGuV",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_2ybh0ZCVh",
-   "desc": "Lesesirkel Scenekunst er en uformell møteplass for samtale og refleksjon rundt tekster som berører scenekunstfeltet. Hver gang inviterer vi en kunstner eller fagperson til å velge en tekst som utgangspunkt for samtalen.",
-   "tags": "scenekunst"
-  },
   {
    "date": "2026-11-11",
    "t": "18:30",
