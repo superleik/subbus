@@ -90,18 +90,6 @@
  ],
  "kunsthall": [
   {
-   "date": "2026-11-11",
-   "t": "17:00",
-   "title": "Anette Gellein: Film Club with Mike Sperlinger",
-   "venue": "Kunsthall Stavanger",
-   "actor": "Kunsthall Stavanger",
-   "cat": "kunst",
-   "url": "https://kunsthallstavanger.no/en/events/anette-gellein-screening-discussion-with-mike-sperlinger",
-   "img": "https://storage.lfcdn.com/lf-kunsthallstavanger-prod/kunsthallstavanger.no/events/anette-gellein-screening-discussion-with-mike-sperlinger/header-media/Skjermbilde-2026-10-02-kl.-15.27.49.png?width=400",
-   "desc": "",
-   "tags": ""
-  },
-  {
    "date": "2026-11-26",
    "t": "18:00",
    "title": "Film Screening with Sølvberget Cinematek",
@@ -131,7 +119,7 @@
   {
    "date": "2026-11-14",
    "t": "12:00",
-   "title": "Forebygging av voldelig ekstremisme gjennom dialog, forsoning og foreldreskap – på to sider av en terrorkonflikt",
+   "title": "Kan en mors kjærlighet bygge en bedre verden?",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
@@ -948,18 +936,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-11",
-   "t": "18:30",
-   "title": "UNDER av Sølvi Edvardsen Production",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "scene",
-   "url": "https://www.touofficial.com/events/under-av-s-lvi-edvardsen-production/ZwSXgS4I9N",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/under-av-solvi-edvardsen-production-16574_HhAEooJUt",
-   "desc": "UNDER er en trollbindende soloforestilling om alle følelsene og minnene som virrer rundt i enkeltmennesket når det er alene. Rost av Dagsavisens anmelder som «en liten perle av en forestilling», viser den hvordan dette blir en del av kropp, sinn og identitet, og med det noe som angår oss alle.",
-   "tags": "dans/teater"
-  },
   {
    "date": "2026-11-12",
    "t": "18:30",
