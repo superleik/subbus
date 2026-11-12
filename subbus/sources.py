@@ -216,6 +216,21 @@ def jazzforum():
     return out
 
 
+
+# --- Manuelle oppføringer fra manuelle.yml -----------------------------------
+def manuelle():
+    import yaml
+    from pathlib import Path
+    f = Path(__file__).resolve().parent.parent / "manuelle.yml"
+    out = []
+    for e in (yaml.safe_load(f.read_text()) or {}).get("arrangementer") or []:
+        sted = clean(str(e.get("sted") or ""))
+        out.append(dict(date=str(e["dato"]), t=clean(str(e.get("tid") or "")), title=clean(str(e["tittel"])),
+                        venue=sted, actor=sted, cat=e.get("kategori") or "annet", url=e.get("lenke") or "",
+                        img=e.get("bilde") or None, desc=clean(str(e.get("tekst") or "")), tags=""))
+    return out
+
+
 SOURCES = {"tou": tou, "folken": folken, "litteraturhuset": litteraturhuset,
            "kunsthall": kunsthall, "risk": risk, "opdahl": opdahl,
-           "jazzforum": jazzforum}
+           "jazzforum": jazzforum, "manuelle": manuelle}

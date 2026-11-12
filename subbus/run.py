@@ -36,7 +36,7 @@ def fetch_all(cfg):
     for name in cfg["kilder"]:
         try:
             items = SOURCES[name]()
-            if not items and cache.get(name):
+            if not items and cache.get(name) and name != "manuelle":
                 raise ValueError("fant 0 arrangementer, har nettsiden endret seg?")
             cache[name] = items
             print(f"{name}: {len(items)} arrangementer")

@@ -1,0 +1,15 @@
+# Arrangementer som legges inn for hånd, for aktører uten nettside (f.eks. Consulatet).
+# Alt her publiseres direkte. Gamle arrangementer forsvinner av seg selv etter datoen.
+#
+# Mal (kopier blokken, fjern # foran, og fyll inn):
+#
+# - dato: 2026-11-14          # ÅÅÅÅ-MM-DD
+#   tid: "20:00"              # kan stå tom: ""
+#   tittel: "Navn på arrangementet"
+#   sted: Consulatet
+#   kategori: konsert         # konsert, klubb, kunst, scene, film, ord eller annet
+#   lenke: https://www.instagram.com/consulatet/
+#   bilde: ""                 # lenke til et bilde, kan stå tom
+#   tekst: ""                 # kort beskrivelse, kan stå tom
+
+arrangementer: []
