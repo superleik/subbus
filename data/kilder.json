@@ -263,54 +263,6 @@
  ],
  "folken": [
   {
-   "date": "2026-11-10",
-   "t": "20:00",
-   "title": "FolkenQuiz - hver tirsdag!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17217-folkenquiz-hver-tirsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017217/mediumFolkenquiz%20Linticket.jpg.jpg",
-   "desc": "Den tradisjonsrike quizen på Folken ruller hver tirsdag i Akvariet, Folkens fine bar i 1. etasje.",
-   "tags": "quiz"
-  },
-  {
-   "date": "2026-11-10",
-   "t": "21:00",
-   "title": "Skoddajazz #5: Moon Inhabitants",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17403-skoddajazz-5-moon-inhabitants",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017403/mediummoon-lt.jpg.jpg",
-   "desc": "Skoddajazz er en nyoppstartet konsertserie i Stavanger, med fokus på å fremme original musikk under jazzparaplyen - den musikken som befinner seg i grenseland mellom sjangre.",
-   "tags": "konsert"
-  },
-  {
-   "date": "2026-11-11",
-   "t": "20:00",
-   "title": "Standup i Grottene hver onsdag",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17236-standup-i-grottene-hver-onsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017236/mediumGrottene-Folken.jpg.jpg",
-   "desc": "\"De nyaste gjør sitt besta, og de beste gjør sitt nyaste!\"",
-   "tags": "comedy"
-  },
-  {
-   "date": "2026-11-11",
-   "t": "20:00",
-   "title": "Natasha Barrett (NO/UK) - presentert av Strømklang og nyMusikk",
-   "venue": "Folken",
-   "actor": "Strømklang",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17342-natasha-barrett-no-uk-presentert-av-stromklang-og-nymusikk",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017342/mediumbarrett-lt.jpg.jpg",
-   "desc": "En pioner innen kunstnerisk bruk av 3D-lyd og ambisonics, og utforsker kontinuerlig nye teknologier og eksperimentelle arbeidsmetoder.",
-   "tags": "konsert"
-  },
-  {
    "date": "2026-11-12",
    "t": "19:00",
    "title": "Billy Meier",
