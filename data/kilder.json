@@ -1200,5 +1200,151 @@
    "desc": "Velkommen til en dag full av musikk, kunst, kultur og smakfulle matopplevelser fra hele verden!",
    "tags": "barn/familie kulturdag"
   }
+ ],
+ "jazzforum": [
+  {
+   "date": "2026-11-05",
+   "t": "20:00",
+   "title": "Scheen Jazzorkester & Thea Grant – «Century Caves»",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/scheen-jazzorkester-thea-grant-century-caves/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/08/credit_chai-saeidi-Thea-Grant-scaled-aspect-ratio-1200-800-1024x683.jpg",
+   "desc": "280 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-06",
+   "t": "20:00",
+   "title": "The Brazz Brothers",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/the-brazz-brothers/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/05/brass-3-scaled-aspect-ratio-1200-800-1024x682.jpg",
+   "desc": "380 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-06",
+   "t": "20:15",
+   "title": "Festivalpass Big Band Bonaza",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/festivalpass-big-band-bonaza/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/10/BBBlogo-002-aspect-ratio-1200-800-1-1024x683.png",
+   "desc": "550 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-07",
+   "t": "19:00",
+   "title": "Big Band Bonanza – dagspass lørdag 7. nov",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/big-band-bonanza-dagspass-lordag-7-nov/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/10/BBBlogo-002-aspect-ratio-1200-800-1024x683.png",
+   "desc": "285 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-12",
+   "t": "20:00",
+   "title": "Sullivan Fortner trio",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/sullivan-fortner-trio/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/04/Sullivan-Fortner-trio-2.jpg",
+   "desc": "350 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-18",
+   "t": "20:00",
+   "title": "Kaja Draksler (SL) – Blå:trå konsert",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/kaja-draksler-sl-blatra-konsert/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/06/Kaja-Draksler-by-Beata-Szparagowska-scaled-aspect-ratio-1200-800-1024x682.jpg",
+   "desc": "200 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-20",
+   "t": "20:00",
+   "title": "WHAT’S COOKING – Kitchen Orchestra med nye verk av Marthe Lea og Olav Stener Olsen",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/whats-cooking-kitchen-orchestra-nye-verk-av-marthe-lea-og-olav-stener-olsen/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/06/Kitchen_Orchestra_Joiner_003-scaled-aspect-ratio-1200-800-1024x683.jpg",
+   "desc": "290 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-25",
+   "t": "20:00",
+   "title": "BlåTrå konsert – Kind Folk",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/blatra-konsert-kind-folk/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/08/Kind-Folk-aspect-ratio-1200-800-1024x683.jpeg",
+   "desc": "150 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-11-28",
+   "t": "20:00",
+   "title": "Rigla",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/rigla/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/09/Rigla1-aspect-ratio-1200-800-1024x683.webp",
+   "desc": "250 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-12-08",
+   "t": "20:00",
+   "title": "Julekonsert med Bjergsted jazzensemble med gjester",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/julekonsert-med-bjergsted-jazzensemble-med-gjester/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/08/Bjergsted-jazzensemble-julekonsert-2023-aspect-ratio-1200-800-1024x683.jpg",
+   "desc": "270 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2026-12-18",
+   "t": "20:00",
+   "title": "Bugge Wesseltoft: It’s Snowing on My Piano",
+   "venue": "Stavanger konserthus - Fartein Valen salen",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/bugge-wesseltoft-its-snowing-on-my-piano-2/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/06/Bugge-Wesseltoft-Snowing-On-My-Piano-aspect-ratio-1200-800.jpg",
+   "desc": "520 kr",
+   "tags": "jazz"
+  },
+  {
+   "date": "2027-02-18",
+   "t": "20:00",
+   "title": "The Red Barn & Bjørn Tomren",
+   "venue": "Spor 5",
+   "actor": "Stavanger Jazzforum",
+   "cat": "konsert",
+   "url": "https://stavangerjazzforum.no/program/the-red-barn-bjorn-tomren/",
+   "img": "https://stavangerjazzforum.no/wp-content/uploads/2026/11/The-Red-Barn-aspect-ratio-1200-800-1024x683.jpeg",
+   "desc": "300 kr",
+   "tags": "jazz"
+  }
  ]
 }
