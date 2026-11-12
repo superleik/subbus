@@ -141,6 +141,18 @@
    "tags": ""
   },
   {
+   "date": "2026-11-18",
+   "t": "18:00",
+   "title": "Kritikersalong med Rogaland Kritikerforum",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/kritikersalong-med-rogaland-kritikerforum",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/d4b8bdde-687d-43cc-a790-828c28de26a0/%C3%85dne+Thomassen.webp",
+   "desc": "Arrangør: Tekstallianse Vil du bli med i Rogaland Kritikerforum? Send e-post til eirin@tekstallianse.org .",
+   "tags": ""
+  },
+  {
    "date": "2026-11-19",
    "t": "19:00",
    "title": "Obstfelderdagene",
@@ -149,7 +161,7 @@
    "cat": "ord",
    "url": "https://www.litthusstvg.no/program/obstfelderdagene",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1791468231773-UGK7XGGSEFDZBSTC4JMZ/Obstfelderdagene+p%C3%A5+Litteraturhuset+i+Stavanger.jpg",
-   "desc": "Arrangør: Litteraturhuset i Stavanger Billetter kommer",
+   "desc": "Arrangør: Litteraturhuset i Stavanger Billetter!",
    "tags": ""
   },
   {
@@ -788,6 +800,18 @@
    "url": "https://www.folken.no/shows/17290-kakkmaddafakka",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017290/mediumkakk-lt.jpg.jpg",
    "desc": "Kakkmaddafakka tar Hest 15-turneen til Stavanger og Folken!",
+   "tags": "konsert"
+  },
+  {
+   "date": "2027-02-27",
+   "t": "21:00",
+   "title": "deLillos",
+   "venue": "Folken",
+   "actor": "Folken",
+   "cat": "konsert",
+   "url": "https://www.folken.no/shows/17445-delillos",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017445/mediumdeLillos-lt.jpg.jpg",
+   "desc": "deLillos tilbake til Folken med elektrisk nytenning. Tett på enda flere!",
    "tags": "konsert"
   },
   {
