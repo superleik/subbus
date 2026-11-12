@@ -12,4 +12,12 @@
 #   bilde: ""                 # lenke til et bilde, kan stå tom
 #   tekst: ""                 # kort beskrivelse, kan stå tom
 
-arrangementer: []
+arrangementer:
+  - dato: 2026-11-14
+    tid: "20:00"
+    tittel: "Rhizocorp (UK) / Helga Sess / Kjetil Brandsdal"
+    sted: Consulatet
+    kategori: konsert
+    lenke: https://www.facebook.com/Consulatet
+    bilde: ""
+    tekst: "Consulatet og Zang presenterer. Post-cyberpunk groove fra Rhizocorp, pluss Helga Sess (Trouble Tone) og Kjetil Brandsdal (Drid Machine). DMR lanserer split-LP-en PSUDOKU/ZKUM. Dokkgata 7. 150 kr."
