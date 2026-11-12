@@ -182,5 +182,40 @@ def opdahl():
     return out
 
 
+# --- Stavanger Jazzforum: programsiden, bildet hentes fra hver konsertside ------
+def jazz_image(url):
+    try:
+        page = get(url).text
+    except Exception:
+        return None
+    # Første opplastede bilde som ikke er en del av sidemalen (logoer o.l. ligger i 2023/01)
+    for src in re.findall(r'src="[^"]*?(https://stavangerjazzforum.no/wp-content/uploads/[^"]+)"', page):
+        if "/2023/01/" not in src:
+            return src
+    return None
+
+
+def jazzforum():
+    lines = text_lines(get("https://stavangerjazzforum.no/program/").text)
+    out, year = [], None
+    for i, l in enumerate(lines):
+        ym = re.match(r"(\w+) (\d{4})$", l)
+        if ym and ym[1].lower() in MONTHS_NO:
+            year = int(ym[2])
+        dm = re.match(r"\w+dag (\d+)\. (\w+)$", l)
+        if not (dm and year and dm[2].lower() in MONTHS_NO and i + 3 < len(lines)):
+            continue
+        link = re.match(r"\[(https://stavangerjazzforum.no/program/[^\]]+)\]$", lines[i + 3])
+        if not link:
+            continue
+        price = next((re.sub(r"\D", "", x) for x in lines[i + 5:i + 8] if x.startswith("Pris ")), "")
+        out.append(dict(date=date(year, MONTHS_NO[dm[2].lower()], int(dm[1])).isoformat(),
+                        t=lines[i + 1] if re.match(r"\d\d:\d\d$", lines[i + 1]) else "",
+                        title=lines[i + 4], venue=lines[i + 2], actor="Stavanger Jazzforum", cat="konsert",
+                        url=link[1], img=jazz_image(link[1]), desc=f"{price} kr" if price else "", tags="jazz"))
+    return out
+
+
 SOURCES = {"tou": tou, "folken": folken, "litteraturhuset": litteraturhuset,
-           "kunsthall": kunsthall, "risk": risk, "opdahl": opdahl}
+           "kunsthall": kunsthall, "risk": risk, "opdahl": opdahl,
+           "jazzforum": jazzforum}

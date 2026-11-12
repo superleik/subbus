@@ -13,6 +13,7 @@ kilder:
   litteraturhuset: review
   folken: review
   tou: review
+  jazzforum: auto
 
 # Publiseres alltid, også fra review-kilder
 alltid_ja:
