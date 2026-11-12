@@ -38,4 +38,4 @@ alltid_nei:
   - "avsparksmøte"
 
 # Hvor langt frem i tid feeden viser (dager)
-dager_frem: 90
+dager_frem: 180
