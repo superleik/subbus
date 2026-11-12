@@ -192,7 +192,7 @@ feedEl.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key ===
 
 function fitLogo() {
   const el = document.getElementById("logo"); el.style.fontSize = "24px";
-  const w = el.parentElement.clientWidth, sw = el.scrollWidth;
+  const w = el.clientWidth, sw = el.scrollWidth;
   if (sw > w) el.style.fontSize = (24 * w / sw).toFixed(2) + "px";
 }
 addEventListener("resize", fitLogo);
