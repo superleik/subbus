@@ -287,30 +287,6 @@
  ],
  "folken": [
   {
-   "date": "2026-11-12",
-   "t": "19:00",
-   "title": "Billy Meier",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17261-billy-meier",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017261/mediumbillym-lt.jpg.jpg",
-   "desc": "\"Billy Meier er et band som virkelig har funnet sin egen vei (...)\" - Audun Vinger, Dagens Næringsliv.",
-   "tags": "konsert"
-  },
-  {
-   "date": "2026-11-12",
-   "t": "20:00",
-   "title": "Communic + Mayfire + Zebulon",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17255-communic--mayfire--zebulon",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017255/mediumcommu-lt.jpg.jpg",
-   "desc": "En unik triple-bill med solide metalband.",
-   "tags": "konsert"
-  },
-  {
    "date": "2026-11-14",
    "t": "21:00",
    "title": "The Impossible Green + support: Palmer",
@@ -415,7 +391,7 @@
    "cat": "konsert",
    "url": "https://www.folken.no/shows/17200-fordrekord",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017200/mediumfordrekord-lt.jpg.jpg",
-   "desc": "",
+   "desc": "FordRekord har i løpet av året rukket å spille på både Utopia, Vaulen Open Air og i Vågen. Nå er det tid for å oppleve haugesundsbandet med siddishjerte på Folken!",
    "tags": "konsert"
   },
   {
@@ -801,6 +777,18 @@
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017321/mediumropstad-lt.jpg.jpg",
    "desc": "Erlend Ropstad er tilbake for å holde en dunderpreken i rockens kirke.",
    "tags": "konsert"
+  },
+  {
+   "date": "2027-02-12",
+   "t": "20:00",
+   "title": "Stand Up Klubbkveld",
+   "venue": "Folken",
+   "actor": "Folken",
+   "cat": "scene",
+   "url": "https://www.folken.no/shows/17513-stand-up-klubbkveld",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017513/mediumdefault_file-1793022303.jpg.jpg",
+   "desc": "",
+   "tags": "comedy"
   },
   {
    "date": "2027-02-20",
