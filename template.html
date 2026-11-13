@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="subbus">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>subbus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,23 +39,25 @@ button { cursor: pointer; }
 :focus-visible { outline: 1px dashed var(--fg); outline-offset: 2px; }
 .dim { color: var(--dim); }
 
-.nav { margin-top: 24px; display: grid; gap: 2px; }
-.nav .row { display: flex; flex-wrap: wrap; gap: 0 1.5ch; }
+.nav { margin-top: 16px; display: grid; gap: 0; position: sticky; top: 0; z-index: 3; background: var(--bg);
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: 6px; border-bottom: 1px dashed var(--dim); }
+.nav .row { display: flex; flex-wrap: wrap; gap: 0 1.2ch; }
+.nav button { padding-block: 7px; min-height: 36px; }
 .nav button { color: var(--dim); }
 .nav button:hover { color: var(--fg); }
 .nav button[aria-pressed="true"] { color: var(--hi); }
 .nav button[aria-pressed="true"]::before { content: "-[ "; }
 .nav button[aria-pressed="true"]::after { content: " ]-"; }
-.search { display: flex; gap: 1ch; margin-top: 6px; }
+.search { display: flex; align-items: center; gap: 1ch; min-height: 40px; }
 .search input { flex: 1; min-width: 0; font-size: 19px; }
 .search input::placeholder { color: var(--dim); }
 
 .day { margin-top: 28px; }
-.day-head { color: var(--hi); position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 4px; }
+.day-head { color: var(--hi); position: sticky; top: var(--navh, 0px); z-index: 2; background: var(--bg); padding-block: 4px; }
 .rule { overflow: hidden; white-space: nowrap; color: var(--dim); }
 .hdr { color: var(--hi); margin-bottom: 6px; }
 .ev { display: grid; grid-template-columns: 3.6em 5.5ch 1fr; column-gap: 1.5ch; align-items: start; padding-block: 8px; cursor: pointer; }
-.img { width: 3.6em; height: 3.6em; border: 1px solid var(--dim); width: 3.6em; height: 4.5em; background: var(--dim) center / cover no-repeat; }
+.img { width: 3.6em; height: 3.6em; border: 1px solid var(--dim); background: var(--dim) center / cover no-repeat; }
 .ev > div:last-child { min-width: 0; overflow-wrap: anywhere; }
 .ev .t { color: var(--hi); }
 .ev:hover .t { text-decoration: underline; }
@@ -58,6 +66,10 @@ button { cursor: pointer; }
 .ongoing a { color: inherit; text-decoration: none; }
 .ongoing a:hover { text-decoration: underline; }
 .desc a { color: var(--fg); }
+.links { display: flex; flex-wrap: wrap; gap: 4px 2ch; margin-top: 6px; }
+.links a { display: inline-block; padding-block: 6px; }
+.top { display: inline-block; margin-top: 16px; padding-block: 8px; color: var(--fg); text-decoration: none; }
+.top:hover { color: var(--hi); }
 
 .send { margin-top: 48px; }
 .send form { display: grid; gap: 6px; margin-top: 10px; }
@@ -87,7 +99,7 @@ ____/  \__,_|  _.__/   _.__/   \__,_|  ____/</pre>
 <main id="feed" aria-live="polite"></main>
 
 
-<footer class="dim"><pre>· subbus ·</pre>oppdatert <span id="updated"></span>.</footer>
+<footer class="dim"><a class="top" href="#">-[ til toppen ]-</a><pre>· subbus ·</pre>oppdatert <span id="updated"></span>.</footer>
 </div>
 
 <script>
@@ -179,7 +191,7 @@ function render() {
     html += `<div class="ev" role="button" tabindex="0" data-id="${e.id}" aria-expanded="${open}">
       <span class="img" aria-hidden="true" style="background-image:url(${e.img || thumb(e.id)})"></span>
       <span class="t">${e.t || '<span class="dim">--:--</span>'}</span>
-      <div><span class="t">${esc(e.title)}</span><br>${who}<br><span class="dim">${e.cat}</span>${open ? `<div class="desc">${e.desc ? esc(e.desc) + "<br>" : ""}<a href="${esc(e.url)}" target="_blank" rel="noopener">til arrangementet -&gt;</a></div>` : ""}</div>
+      <div><span class="t">${esc(e.title)}</span><br>${who}<br><span class="dim">${e.cat}</span>${open ? `<div class="desc">${e.desc ? esc(e.desc) + "<br>" : ""}<div class="links"><a href="${esc(e.url)}" target="_blank" rel="noopener">til arrangementet -&gt;</a>${e.ics ? `<a href="${esc(e.ics)}">+ legg i kalender</a>` : ""}</div></div>` : ""}</div>
     </div>`;
   });
   feed.innerHTML = html + "</section>";
@@ -199,6 +211,10 @@ addEventListener("resize", fitLogo);
 document.fonts && document.fonts.ready.then(fitLogo);
 fitLogo();
 document.getElementById("updated").textContent = DATA.updated || "";
+const nav = document.querySelector(".nav");
+const setNavH = () => document.documentElement.style.setProperty("--navh", nav.offsetHeight + "px");
+if (window.ResizeObserver) new ResizeObserver(setNavH).observe(nav);
+setNavH();
 renderOngoing();
 render();
 </script>

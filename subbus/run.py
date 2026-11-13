@@ -9,7 +9,7 @@ import json
 import os
 import re
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -86,6 +86,29 @@ def thumbnail(e):
     return "img/" + name
 
 
+def ics_text(s):
+    return re.sub(r"([,;\\])", r"\\\1", s or "").replace("\n", "\\n")
+
+
+def calendar_file(e):
+    """Skriver site/ics/<id>.ics, som telefonen åpner i kalenderen. Uten klokkeslett blir det heldags."""
+    d = date.fromisoformat(e["date"])
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    if re.match(r"\d\d:\d\d$", e.get("t") or ""):
+        start = datetime.combine(d, datetime.strptime(e["t"], "%H:%M").time(), OSL).astimezone(timezone.utc)
+        when = [f"DTSTART:{start:%Y%m%dT%H%M%SZ}", f"DTEND:{start + timedelta(hours=2):%Y%m%dT%H%M%SZ}"]
+    else:
+        when = [f"DTSTART;VALUE=DATE:{d:%Y%m%d}", f"DTEND;VALUE=DATE:{d + timedelta(days=1):%Y%m%d}"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//subbus//NO", "METHOD:PUBLISH", "BEGIN:VEVENT",
+             f"UID:{e['id']}@subbus", f"DTSTAMP:{stamp}", *when,
+             f"SUMMARY:{ics_text(e['title'])}", f"LOCATION:{ics_text(e['venue'])}",
+             f"DESCRIPTION:{ics_text(chr(10).join(x for x in (e.get('desc'), e['url']) if x))}", f"URL:{e['url']}",
+             "END:VEVENT", "END:VCALENDAR"]
+    (SITE / "ics").mkdir(parents=True, exist_ok=True)
+    (SITE / "ics" / f"{e['id']}.ics").write_text("\r\n".join(lines) + "\r\n")
+    return f"ics/{e['id']}.ics"
+
+
 def main():
     cfg = yaml.safe_load((ROOT / "config.yml").read_text())
     today = datetime.now(OSL).date()
@@ -117,11 +140,13 @@ def main():
             continue
         seen.add(e["id"])
         feed.append(dict(date=e["date"], t=e["t"], title=e["title"], venue=e["venue"], actor=e["actor"],
-                         cat=e["cat"], url=e["url"], desc=e.get("desc", ""), img=thumbnail(e)))
+                         cat=e["cat"], url=e["url"], desc=e.get("desc", ""), img=thumbnail(e), ics=calendar_file(e)))
 
     now = datetime.now(OSL)
     data = dict(events=feed, ongoing=ongoing,
                 updated=f"{DAYS[now.weekday()]} {now:%d.%m %H:%M}")
+    for f in (ROOT / "static").iterdir():
+        (SITE / f.name).write_bytes(f.read_bytes())
     page = (ROOT / "template.html").read_text().replace("/*DATA*/", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
     (SITE / "index.html").write_text(page)
     print(f"bygget site/index.html med {len(feed)} arrangementer")
