@@ -28,10 +28,13 @@
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; }
+:root { --safe: env(safe-area-inset-top, 0px); }
+@media (display-mode: standalone) { :root { --safe: calc(env(safe-area-inset-top, 0px) + 16px); } }
+body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: var(--safe); background: var(--bg); z-index: 4; }
 img { max-width: 100%; }
 [hidden] { display: none !important; }
 body { background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 19px; line-height: 1.2; }
-.wrap { max-width: 34rem; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+.wrap { max-width: 34rem; margin: 0 auto; padding-inline: 16px; padding-block: calc(var(--safe) + 28px) 64px; }
 pre { font: inherit; margin: 0; white-space: pre; }
 .logo { font-size: 24px; line-height: 1.05; color: var(--hi); overflow: hidden; }
 button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; padding: 0; }
@@ -39,8 +42,8 @@ button { cursor: pointer; }
 :focus-visible { outline: 1px dashed var(--fg); outline-offset: 2px; }
 .dim { color: var(--dim); }
 
-.nav { margin-top: 16px; display: grid; gap: 0; position: sticky; top: 0; z-index: 3; background: var(--bg);
-  padding-top: env(safe-area-inset-top, 0px); padding-bottom: 6px; border-bottom: 1px dashed var(--dim); }
+.nav { margin-top: 16px; display: grid; gap: 0; position: sticky; top: var(--safe); z-index: 3; background: var(--bg);
+  padding-top: 4px; padding-bottom: 6px; border-bottom: 1px dashed var(--dim); }
 .nav .row { display: flex; flex-wrap: wrap; gap: 0 1.2ch; }
 .nav button { padding-block: 7px; min-height: 36px; }
 .nav button { color: var(--dim); }
@@ -53,7 +56,7 @@ button { cursor: pointer; }
 .search input::placeholder { color: var(--dim); }
 
 .day { margin-top: 28px; }
-.day-head { color: var(--hi); position: sticky; top: var(--navh, 0px); z-index: 2; background: var(--bg); padding-block: 4px; }
+.day-head { color: var(--hi); position: sticky; top: calc(var(--safe) + var(--navh, 0px)); z-index: 2; background: var(--bg); padding-block: 4px; }
 .rule { overflow: hidden; white-space: nowrap; color: var(--dim); }
 .hdr { color: var(--hi); margin-bottom: 6px; }
 .ev { display: grid; grid-template-columns: 3.6em 5.5ch 1fr; column-gap: 1.5ch; align-items: start; padding-block: 8px; cursor: pointer; }
