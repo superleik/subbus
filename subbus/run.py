@@ -71,9 +71,10 @@ def thumbnail(e):
     CACHE.mkdir(parents=True, exist_ok=True)
     name = hashlib.sha1(e["img"].encode()).hexdigest()[:12] + ".jpg"
     cached = CACHE / name
-    if not cached.exists():
+    local = ROOT / e["img"] if not e["img"].startswith("http") else None
+    if local or not cached.exists():
         try:
-            raw = requests.get(e["img"], headers=UA, timeout=30).content
+            raw = local.read_bytes() if local else requests.get(e["img"], headers=UA, timeout=30).content
             im = Image.open(io.BytesIO(raw)).convert("RGB")
             side = min(im.size)
             left, top = (im.width - side) // 2, (im.height - side) // 2

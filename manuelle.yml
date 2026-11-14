@@ -9,7 +9,7 @@
 #   sted: Consulatet
 #   kategori: konsert         # konsert, klubb, kunst, scene, film, ord eller annet
 #   lenke: https://www.instagram.com/consulatet/
-#   bilde: ""                 # lenke til et bilde, kan stå tom
+#   bilde: ""                 # lenke til et bilde, eller en fil i bilder/ (f.eks. bilder/plakat.jpg), kan stå tom
 #   tekst: ""                 # kort beskrivelse, kan stå tom
 
 arrangementer:
