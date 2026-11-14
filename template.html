@@ -44,7 +44,7 @@ button { cursor: pointer; }
 header { padding-top: calc(var(--safe) + 18px); border-bottom: 1px solid var(--green); }
 .bar { max-width: 40rem; margin: 0 auto; padding: 0 16px 12px; display: grid; gap: 10px; }
 .logo { margin: 0; font-family: var(--mono); font-size: 13px; line-height: 1.1; letter-spacing: 0; color: var(--green); white-space: pre; overflow: hidden; }
-.upd { font-size: 12px; justify-self: end; }
+.upd { margin: 14px 0 0; font-size: 12px; }
 .wrap { max-width: 40rem; margin: 0 auto; padding: 0 16px 64px; }
 
 .nav { position: sticky; top: var(--safe); z-index: 3; background: var(--bg); display: grid; gap: 8px; padding: 14px 0 12px; border-bottom: 1px dashed var(--green); }
@@ -74,7 +74,7 @@ header { padding-top: calc(var(--safe) + 18px); border-bottom: 1px solid var(--g
 .pill:hover { background: var(--green-soft); }
 .pill.on { background: var(--green); color: #fff; }
 
-.ongoing { margin-top: 26px; }
+.ongoing { margin-top: 14px; }
 .ongoing h2 { margin: 0; padding: 8px 0 6px; font: inherit; font-size: 13px; color: var(--green); border-bottom: 1px solid var(--line); }
 .ongoing a { display: block; padding: 10px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
 .ongoing a:hover .title { color: var(--green); }
@@ -89,7 +89,7 @@ footer .pill { margin-bottom: 18px; color: var(--fg); }
      _/_/_/  _/    _/  _/_/_/    _/_/_/    _/    _/    _/_/_/
   _/_/      _/    _/  _/    _/  _/    _/  _/    _/  _/_/
      _/_/  _/    _/  _/    _/  _/    _/  _/    _/      _/_/
-_/_/_/      _/_/_/  _/_/_/    _/_/_/      _/_/_/  _/_/_/</pre><span class="dim upd" id="updated"></span></div></header>
+_/_/_/      _/_/_/  _/_/_/    _/_/_/      _/_/_/  _/_/_/</pre></div></header>
 
 <div class="wrap">
 <nav class="nav" aria-label="filter">
@@ -98,6 +98,7 @@ _/_/_/      _/_/_/  _/_/_/    _/_/_/      _/_/_/  _/_/_/</pre><span class="dim u
   <label class="search"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="#3fa34d" stroke-width="1.3"/><path d="M9.5 9.5 13 13" stroke="#3fa34d" stroke-width="1.3"/></svg><input id="q" type="search" placeholder="søk" autocomplete="off" aria-label="søk"></label>
 </nav>
 
+<p class="dim upd" id="updated"></p>
 <section class="ongoing" id="ongoing"></section>
 <main id="feed" aria-live="polite"></main>
 
