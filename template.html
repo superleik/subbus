@@ -67,6 +67,7 @@ header { padding-top: calc(var(--safe) + 18px); border-bottom: 1px solid var(--g
 .time { color: var(--green); font-size: 13px; padding-top: 2px; }
 .title { font-weight: 500; }
 .ev:hover .title { color: var(--green); }
+.ev[aria-expanded="true"] .title, .ev:active .title { background: var(--green); color: #fff; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; padding: 1px 3px; margin-left: -3px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .meta { color: var(--dim); font-size: 13px; }
 .desc { margin-top: 8px; font-size: 14px; }
 .links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
