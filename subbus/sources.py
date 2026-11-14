@@ -225,6 +225,9 @@ def manuelle():
     out = []
     for e in (yaml.safe_load(f.read_text()) or {}).get("arrangementer") or []:
         sted = clean(str(e.get("sted") or ""))
+        standard = f.parent / "bilder" / f"{sted.lower()}.jpg"   # f.eks. bilder/consulatet.jpg
+        if not e.get("bilde") and standard.exists():
+            e["bilde"] = f"bilder/{standard.name}"
         out.append(dict(date=str(e["dato"]), t=clean(str(e.get("tid") or "")), title=clean(str(e["tittel"])),
                         venue=sted, actor=sted, cat=e.get("kategori") or "annet", url=e.get("lenke") or "",
                         img=e.get("bilde") or None, desc=clean(str(e.get("tekst") or "")), tags=""))
