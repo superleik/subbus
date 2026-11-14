@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="subbus">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png" type="image/png">
@@ -13,96 +13,90 @@
 <title>subbus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one black terminal column, Amiga-style ASCII headers. Deliberately dark-only. */
+/* Light, airy sequencer-panel look: white, hairline grey grid, one green accent. Light-only by design. */
 :root {
-  --bg: #000;
-  --fg: #b4b4b4;
-  --dim: #6b6b6b;
-  --hi: #fff;
-  --mono: "VT323", "Topaz", ui-monospace, Menlo, Consolas, monospace;
-  color-scheme: dark;
+  --bg: #fff;
+  --fg: #161616;
+  --dim: #8a8a8a;
+  --line: #d9d9d9;
+  --green: #3fa34d;
+  --green-soft: #eaf5ec;
+  --mono: "DM Mono", ui-monospace, Menlo, Consolas, monospace;
+  --safe: env(safe-area-inset-top, 0px);
+  color-scheme: light;
 }
+@media (display-mode: standalone) { :root { --safe: calc(env(safe-area-inset-top, 0px) + 8px); } }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; }
-:root { --safe: env(safe-area-inset-top, 0px); }
-@media (display-mode: standalone) { :root { --safe: calc(env(safe-area-inset-top, 0px) + 16px); } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 15px; line-height: 1.45; letter-spacing: .01em; }
 body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: var(--safe); background: var(--bg); z-index: 4; }
 img { max-width: 100%; }
 [hidden] { display: none !important; }
-body { background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 19px; line-height: 1.2; }
-.wrap { max-width: 34rem; margin: 0 auto; padding-inline: 16px; padding-block: calc(var(--safe) + 28px) 64px; }
-pre { font: inherit; margin: 0; white-space: pre; }
-.logo { font-size: 24px; line-height: 1.05; color: var(--hi); overflow: hidden; }
-button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; padding: 0; }
+a { color: inherit; }
+button, input { font: inherit; color: inherit; background: none; border: 0; border-radius: 0; padding: 0; letter-spacing: inherit; }
 button { cursor: pointer; }
-:focus-visible { outline: 1px dashed var(--fg); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .dim { color: var(--dim); }
 
-.nav { margin-top: 16px; display: grid; gap: 0; position: sticky; top: var(--safe); z-index: 3; background: var(--bg);
-  padding-top: 4px; padding-bottom: 6px; border-bottom: 1px dashed var(--dim); }
-.nav .row { display: flex; flex-wrap: wrap; gap: 0 1.2ch; }
-.nav button { padding-block: 7px; min-height: 36px; }
-.nav button { color: var(--dim); }
-.nav button:hover { color: var(--fg); }
-.nav button[aria-pressed="true"] { color: var(--hi); }
-.nav button[aria-pressed="true"]::before { content: "-[ "; }
-.nav button[aria-pressed="true"]::after { content: " ]-"; }
-.search { display: flex; align-items: center; gap: 1ch; min-height: 40px; }
-.search input { flex: 1; min-width: 0; font-size: 19px; }
+header { padding-top: calc(var(--safe) + 18px); border-bottom: 1px solid var(--green); }
+.bar { max-width: 40rem; margin: 0 auto; padding: 0 16px 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.name { font-weight: 500; font-size: 17px; letter-spacing: .04em; }
+.wrap { max-width: 40rem; margin: 0 auto; padding: 0 16px 64px; }
+
+.nav { position: sticky; top: var(--safe); z-index: 3; background: var(--bg); display: grid; gap: 8px; padding: 14px 0 12px; border-bottom: 1px dashed var(--green); }
+.nav .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.nav button { min-height: 32px; padding: 4px 14px; border: 1px solid var(--green); border-radius: 999px; font-size: 13px; transition: background .15s, color .15s; }
+.nav button:hover { background: var(--green-soft); }
+.nav button[aria-pressed="true"] { background: var(--green); color: #fff; }
+.search { display: flex; align-items: center; gap: 8px; min-height: 36px; border: 1px solid var(--line); border-radius: 999px; padding: 0 14px; }
+.search:focus-within { border-color: var(--green); }
+.search svg { flex: none; }
+.search input { flex: 1; min-width: 0; font-size: 16px; outline: none; }
 .search input::placeholder { color: var(--dim); }
 
-.day { margin-top: 28px; }
-.day-head { color: var(--hi); position: sticky; top: calc(var(--safe) + var(--navh, 0px)); z-index: 2; background: var(--bg); padding-block: 4px; }
-.rule { overflow: hidden; white-space: nowrap; color: var(--dim); }
-.hdr { color: var(--hi); margin-bottom: 6px; }
-.ev { display: grid; grid-template-columns: 3.6em 5.5ch 1fr; column-gap: 1.5ch; align-items: start; padding-block: 8px; cursor: pointer; }
-.img { width: 3.6em; height: 3.6em; border: 1px solid var(--dim); background: var(--dim) center / cover no-repeat; }
+.day { margin-top: 26px; }
+.day-head { position: sticky; top: calc(var(--safe) + var(--navh, 0px)); z-index: 2; background: var(--bg); padding: 8px 0 6px; font-size: 13px; color: var(--green); border-bottom: 1px solid var(--line); }
+.day-head b { font-weight: 500; color: var(--fg); margin-right: 8px; }
+.ev { display: grid; grid-template-columns: 64px 5ch 1fr; column-gap: 14px; align-items: start; padding: 12px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.img { width: 64px; height: 64px; border: 1px solid var(--line); background: var(--bg) center / cover no-repeat; }
 .ev > div:last-child { min-width: 0; overflow-wrap: anywhere; }
-.ev .t { color: var(--hi); }
-.ev:hover .t { text-decoration: underline; }
-.desc { margin-top: 6px; }
-.ongoing { margin-top: 28px; }
-.ongoing a { color: inherit; text-decoration: none; }
-.ongoing a:hover { text-decoration: underline; }
-.desc a { color: var(--fg); }
-.links { display: flex; flex-wrap: wrap; gap: 4px 2ch; margin-top: 6px; }
-.links a { display: inline-block; padding-block: 6px; }
-.top { display: inline-block; margin-top: 16px; padding-block: 8px; color: var(--fg); text-decoration: none; }
-.top:hover { color: var(--hi); }
+.time { color: var(--green); font-size: 13px; padding-top: 2px; }
+.title { font-weight: 500; }
+.ev:hover .title { color: var(--green); }
+.meta { color: var(--dim); font-size: 13px; }
+.desc { margin-top: 8px; font-size: 14px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.pill { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 14px; border: 1px solid var(--green); border-radius: 999px; font-size: 13px; text-decoration: none; }
+.pill:hover { background: var(--green-soft); }
+.pill.on { background: var(--green); color: #fff; }
 
-.send { margin-top: 48px; }
-.send form { display: grid; gap: 6px; margin-top: 10px; }
-.send label { display: flex; gap: 1ch; }
-.send input { flex: 1; min-width: 0; font-size: 19px; border-bottom: 1px dashed var(--dim); }
-.send button { justify-self: start; margin-top: 8px; }
-.send button:hover { color: var(--hi); text-decoration: underline; }
-.empty { margin-top: 28px; }
-footer { margin-top: 48px; }
+.ongoing { margin-top: 26px; }
+.ongoing h2 { margin: 0; padding: 8px 0 6px; font: inherit; font-size: 13px; color: var(--green); border-bottom: 1px solid var(--line); }
+.ongoing a { display: block; padding: 10px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.ongoing a:hover .title { color: var(--green); }
+.empty { margin-top: 26px; }
+footer { margin-top: 40px; font-size: 13px; color: var(--green); display: grid; gap: 2px; justify-items: start; }
+footer .pill { margin-bottom: 18px; color: var(--fg); }
 </style>
 </head>
 <body>
 
-<div class="wrap">
-<pre class="logo" id="logo" aria-label="subbus">                |       |
-  __|   |   |   __ \    __ \    |   |    __|
-\__ \   |   |   |   |   |   |   |   |  \__ \
-____/  \__,_|  _.__/   _.__/   \__,_|  ____/</pre>
+<header><div class="bar"><span class="name">subbus</span><span class="dim" style="font-size:13px" id="updated"></span></div></header>
 
+<div class="wrap">
 <nav class="nav" aria-label="filter">
   <div class="row" id="when"></div>
   <div class="row" id="cats"></div>
-  <label class="search"><span class="dim">&gt;</span><input id="q" type="search" placeholder="søk" autocomplete="off" aria-label="søk"></label>
+  <label class="search"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="#3fa34d" stroke-width="1.3"/><path d="M9.5 9.5 13 13" stroke="#3fa34d" stroke-width="1.3"/></svg><input id="q" type="search" placeholder="søk" autocomplete="off" aria-label="søk"></label>
 </nav>
 
 <section class="ongoing" id="ongoing"></section>
 <main id="feed" aria-live="polite"></main>
 
-
-<footer class="dim"><a class="top" href="#">-[ til toppen ]-</a><pre>· subbus ·</pre>oppdatert <span id="updated"></span>.</footer>
+<footer><a class="pill" href="#">↑ til toppen</a><span>subbus</span></footer>
 </div>
 
 <script>
@@ -153,23 +147,13 @@ const pad = n => String(n).padStart(2, "0");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 // Fallback picture for events without an image: a small generated colour field.
-const THUMBS = {};
-function thumb(seed) {
-  if (THUMBS[seed]) return THUMBS[seed];
-  let a = seed * 9301 + 49297;
-  const rnd = () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-  const N = 96, c = document.createElement("canvas"); c.width = c.height = N;
-  const g = c.getContext("2d"), h = rnd() * 360;
-  g.fillStyle = `hsl(${h} 70% 40%)`; g.fillRect(0, 0, N, N);
-  for (let i = 0; i < 4; i++) { g.fillStyle = `hsl(${(h + 120 + rnd() * 120) % 360} 80% ${40 + rnd() * 40}%)`; g.beginPath(); g.arc(rnd() * N, rnd() * N, 8 + rnd() * 30, 0, 7); g.fill(); }
-  return THUMBS[seed] = c.toDataURL();
-}
+const thumb = () => "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M0 0 10 10M10 0 0 10" stroke="#3fa34d" stroke-width=".25"/></svg>');
 
 function renderOngoing() {
   const el = document.getElementById("ongoing");
   if (!DATA.ongoing.length) return;
-  el.innerHTML = `<pre class="hdr">pågår:\n<span class="dim">~~~~~~</span></pre>` + DATA.ongoing.map(o =>
-    `<div><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a><br><span class="dim">${esc(o.venue)}, til ${esc(o.until)}</span></div>`).join('<div style="height:8px"></div>');
+  el.innerHTML = `<h2>pågår</h2>` + DATA.ongoing.map(o =>
+    `<a href="${esc(o.url)}" target="_blank" rel="noopener"><span class="title">${esc(o.title)}</span><br><span class="meta">${esc(o.venue)}, til ${esc(o.until)}</span></a>`).join("");
 }
 
 function render() {
@@ -186,15 +170,15 @@ function render() {
     if (e.date !== cur) {
       if (cur !== null) html += "</section>";
       cur = e.date;
-      const label = `${DAYS[e.dt.getDay()]} ${pad(e.dt.getDate())}.${pad(e.dt.getMonth() + 1)}${e.d === 0 ? " · i dag" : e.d === 1 ? " · i morgen" : ""}:`;
-      html += `<section class="day"><pre class="day-head">${label}\n<span class="dim">${"~".repeat(label.length)}</span></pre>`;
+      const rel = e.d === 0 ? "i dag" : e.d === 1 ? "i morgen" : "";
+      html += `<section class="day"><div class="day-head"><b>${DAYS[e.dt.getDay()]} ${pad(e.dt.getDate())}.${pad(e.dt.getMonth() + 1)}</b>${rel}</div>`;
     }
     const open = state.open.has(e.id);
     const who = e.actor && !e.actor.startsWith(e.venue) ? `${esc(e.venue)} / ${esc(e.actor)}` : esc(e.venue);
     html += `<div class="ev" role="button" tabindex="0" data-id="${e.id}" aria-expanded="${open}">
-      <span class="img" aria-hidden="true" style="background-image:url(${e.img || thumb(e.id)})"></span>
-      <span class="t">${e.t || '<span class="dim">--:--</span>'}</span>
-      <div><span class="t">${esc(e.title)}</span><br>${who}<br><span class="dim">${e.cat}</span>${open ? `<div class="desc">${e.desc ? esc(e.desc) + "<br>" : ""}<div class="links"><a href="${esc(e.url)}" target="_blank" rel="noopener">til arrangementet -&gt;</a>${e.ics ? `<a href="${esc(e.ics)}">+ legg i kalender</a>` : ""}</div></div>` : ""}</div>
+      <span class="img" aria-hidden="true" style="background-image:url(&quot;${e.img || thumb()}&quot;)"></span>
+      <span class="time">${e.t || "––:––"}</span>
+      <div><span class="title">${esc(e.title)}</span><div class="meta">${who} · ${e.cat}</div>${open ? `<div class="desc">${e.desc ? esc(e.desc) : ""}<div class="links"><a class="pill on" href="${esc(e.url)}" target="_blank" rel="noopener">til arrangementet →</a>${e.ics ? `<a class="pill" href="${esc(e.ics)}">+ legg i kalender</a>` : ""}</div></div>` : ""}</div>
     </div>`;
   });
   feed.innerHTML = html + "</section>";
@@ -205,15 +189,7 @@ feedEl.addEventListener("click", ev => { if (ev.target.closest("a")) return; con
 feedEl.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList.contains("ev")) { ev.preventDefault(); toggle(ev.target); } });
 
 
-function fitLogo() {
-  const el = document.getElementById("logo"); el.style.fontSize = "24px";
-  const w = el.clientWidth, sw = el.scrollWidth;
-  if (sw > w) el.style.fontSize = (24 * w / sw).toFixed(2) + "px";
-}
-addEventListener("resize", fitLogo);
-document.fonts && document.fonts.ready.then(fitLogo);
-fitLogo();
-document.getElementById("updated").textContent = DATA.updated || "";
+document.getElementById("updated").textContent = DATA.updated ? "oppdatert " + DATA.updated : "";
 const nav = document.querySelector(".nav");
 const setNavH = () => document.documentElement.style.setProperty("--navh", nav.offsetHeight + "px");
 if (window.ResizeObserver) new ResizeObserver(setNavH).observe(nav);
