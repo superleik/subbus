@@ -42,8 +42,9 @@ button { cursor: pointer; }
 .dim { color: var(--dim); }
 
 header { padding-top: calc(var(--safe) + 18px); border-bottom: 1px solid var(--green); }
-.bar { max-width: 40rem; margin: 0 auto; padding: 0 16px 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
-.name { font-weight: 500; font-size: 17px; letter-spacing: .04em; }
+.bar { max-width: 40rem; margin: 0 auto; padding: 0 16px 12px; display: grid; gap: 10px; }
+.logo { margin: 0; font-family: var(--mono); font-size: 13px; line-height: 1.1; letter-spacing: 0; color: var(--green); white-space: pre; overflow: hidden; }
+.upd { font-size: 12px; justify-self: end; }
 .wrap { max-width: 40rem; margin: 0 auto; padding: 0 16px 64px; }
 
 .nav { position: sticky; top: var(--safe); z-index: 3; background: var(--bg); display: grid; gap: 8px; padding: 14px 0 12px; border-bottom: 1px dashed var(--green); }
@@ -84,7 +85,11 @@ footer .pill { margin-bottom: 18px; color: var(--fg); }
 </head>
 <body>
 
-<header><div class="bar"><span class="name">subbus</span><span class="dim" style="font-size:13px" id="updated"></span></div></header>
+<header><div class="bar"><pre class="logo" id="logo" aria-label="subbus">                        _/        _/
+     _/_/_/  _/    _/  _/_/_/    _/_/_/    _/    _/    _/_/_/
+  _/_/      _/    _/  _/    _/  _/    _/  _/    _/  _/_/
+     _/_/  _/    _/  _/    _/  _/    _/  _/    _/      _/_/
+_/_/_/      _/_/_/  _/_/_/    _/_/_/      _/_/_/  _/_/_/</pre><span class="dim upd" id="updated"></span></div></header>
 
 <div class="wrap">
 <nav class="nav" aria-label="filter">
@@ -189,6 +194,13 @@ feedEl.addEventListener("click", ev => { if (ev.target.closest("a")) return; con
 feedEl.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList.contains("ev")) { ev.preventDefault(); toggle(ev.target); } });
 
 
+function fitLogo() {
+  const el = document.getElementById("logo"); el.style.fontSize = "13px";
+  if (el.scrollWidth > el.clientWidth) el.style.fontSize = (13 * el.clientWidth / el.scrollWidth).toFixed(2) + "px";
+}
+addEventListener("resize", fitLogo);
+document.fonts && document.fonts.ready.then(fitLogo);
+fitLogo();
 document.getElementById("updated").textContent = DATA.updated ? "oppdatert " + DATA.updated : "";
 const nav = document.querySelector(".nav");
 const setNavH = () => document.documentElement.style.setProperty("--navh", nav.offsetHeight + "px");
