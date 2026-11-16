@@ -131,7 +131,7 @@
   {
    "date": "2026-11-19",
    "t": "19:00",
-   "title": "Obstfelderdagene",
+   "title": "Obstfelderdagene - Poesifestival!",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
@@ -741,6 +741,18 @@
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017513/mediumdefault_file-1793022303.jpg.jpg",
    "desc": "",
    "tags": "comedy"
+  },
+  {
+   "date": "2027-02-19",
+   "t": "21:00",
+   "title": "2J",
+   "venue": "Folken",
+   "actor": "Folken",
+   "cat": "konsert",
+   "url": "https://www.folken.no/shows/17582-2j",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017582/mediumFoto__x3a_%20Stig%20Buvarp.jpg.jpg",
+   "desc": "Du satser på deg selv før du vet om det går, og finner ut av resten underveis.",
+   "tags": "konsert"
   },
   {
    "date": "2027-02-20",
