@@ -451,7 +451,7 @@
    "cat": "konsert",
    "url": "https://www.folken.no/shows/17244-miss-wednesday",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017244/mediumwednes-lt.jpg.jpg",
-   "desc": "",
+   "desc": "Øko-folk-pop som bobler over av framtidstro, positivitet og glede.",
    "tags": "konsert"
   },
   {
@@ -1065,6 +1065,18 @@
    "cat": "annet",
    "url": "https://www.touofficial.com/events/mongoland-filmvisning/DsBlpRsp3s",
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_1GP7bfmG0",
+   "desc": "Lenge leve Mongoland! Klassikeren som satte Stavanger på filmkartet fyller hele 25 år.  ",
+   "tags": "film"
+  },
+  {
+   "date": "2026-12-18",
+   "t": "15:30",
+   "title": "Mongoland filmvisning",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/mongoland-filmvisning/2hMKhE7KFZ",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_8WveoBDWr",
    "desc": "Lenge leve Mongoland! Klassikeren som satte Stavanger på filmkartet fyller hele 25 år.  ",
    "tags": "film"
   },
