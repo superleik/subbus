@@ -117,18 +117,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-18",
-   "t": "18:00",
-   "title": "Kritikersalong med Rogaland Kritikerforum",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/kritikersalong-med-rogaland-kritikerforum",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/d4b8bdde-687d-43cc-a790-828c28de26a0/%C3%85dne+Thomassen.webp",
-   "desc": "Arrangør: Tekstallianse Vil du bli med i Rogaland Kritikerforum? Send e-post til eirin@tekstallianse.org .",
-   "tags": ""
-  },
-  {
    "date": "2026-11-19",
    "t": "19:00",
    "title": "Obstfelderdagene - Poesifestival!",
@@ -274,30 +262,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-18",
-   "t": "19:30",
-   "title": "Filmklubb: Loveless (Russia, 2017)",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "film",
-   "url": "https://www.folken.no/shows/17184-filmklubb-loveless-russia-217",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017184/medium06-lt.jpg.jpg",
-   "desc": "",
-   "tags": "film"
-  },
-  {
-   "date": "2026-11-18",
-   "t": "20:00",
-   "title": "Standup i Grottene hver onsdag",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17237-standup-i-grottene-hver-onsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017237/mediumGrottene-Folken.jpg.jpg",
-   "desc": "\"De nyaste gjør sitt besta, og de beste gjør sitt nyaste!\"",
-   "tags": "comedy"
-  },
   {
    "date": "2026-11-19",
    "t": "20:00",
@@ -888,18 +852,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-18",
-   "t": "18:00",
-   "title": "Performance Kafé med Pia MYrvoLD",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "annet",
-   "url": "https://www.touofficial.com/events/performance-kaf-med-pia-myrvold/Y2hgbwbWAE",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_qu45Cz2q8D",
-   "desc": "Fire ganger i året inviterer Performance Art Stavanger en utøvende performancekunstner til Performance Kafé. Sammen med ordstyrer og publikum dykker vi ned i interessante og relevante tema innen performance og kunstnerens egen virksomhet, hvor samtalen vil vandre, og hva som skjer underveis er helt ",
-   "tags": "performance visuellkunst pas"
-  },
   {
    "date": "2026-11-21",
    "t": "10:00",
