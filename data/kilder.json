@@ -119,7 +119,7 @@
   {
    "date": "2026-11-19",
    "t": "19:00",
-   "title": "Obstfelderdagene - Poesifestival!",
+   "title": "Obstfelder- dagene: Poesifestival!",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
@@ -232,7 +232,7 @@
    "actor": "Stavanger Litteraturhus",
    "cat": "ord",
    "url": "https://www.litthusstvg.no/program/halvliter-med-kunnskap-kneecap",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/965ee523-a0fc-4108-944b-8f4ba22ead0b/Kneecap+frida+fliflet.jpg",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1795081491446-FSWG7IERTRCFJF0BAJB6/Kneecap+frida+fliflet+fb+%281%29.jpg",
    "desc": "Arrangør: Ungt Programråd Litteraturhuset Kjøp billett",
    "tags": ""
   },
@@ -704,6 +704,18 @@
    "url": "https://www.folken.no/shows/17290-kakkmaddafakka",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017290/mediumkakk-lt.jpg.jpg",
    "desc": "Kakkmaddafakka tar Hest 15-turneen til Stavanger og Folken!",
+   "tags": "konsert"
+  },
+  {
+   "date": "2027-02-26",
+   "t": "21:00",
+   "title": "Mandalai Lamas",
+   "venue": "Folken",
+   "actor": "Folken",
+   "cat": "konsert",
+   "url": "https://www.folken.no/shows/17518-mandalai-lamas",
+   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017518/mediumlamas-park.jpg.jpg",
+   "desc": "",
    "tags": "konsert"
   },
   {
