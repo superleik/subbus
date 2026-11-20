@@ -117,18 +117,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-19",
-   "t": "19:00",
-   "title": "Obstfelder- dagene: Poesifestival!",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/obstfelderdagene",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1791468231773-UGK7XGGSEFDZBSTC4JMZ/Obstfelderdagene+p%C3%A5+Litteraturhuset+i+Stavanger.jpg",
-   "desc": "Arrangør: Litteraturhuset i Stavanger Billetter!",
-   "tags": ""
-  },
-  {
    "date": "2026-11-23",
    "t": "19:30",
    "title": "Concors - releasekonsert for Nordic Swimming",
@@ -286,18 +274,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-20",
-   "t": "21:00",
-   "title": "Skoddajazz #6: Goose Green 3",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17282-skoddajazz-6-goose-green-3",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017282/mediumgoose-lt.jpg.jpg",
-   "desc": "Skoddajazz er en nyoppstartet konsertserie i Stavanger, med fokus på å fremme original musikk under jazzparaplyen - den musikken som befinner seg i grenseland mellom sjangre.",
-   "tags": "konsert"
-  },
   {
    "date": "2026-11-21",
    "t": "20:00",
