@@ -75,15 +75,15 @@
  ],
  "opdahl": [
   {
-   "date": "2026-10-09",
-   "until": "2026-11-14",
+   "date": "2026-12-04",
+   "until": "2027-01-22",
    "t": "",
-   "title": "Maruša Sagadin / Everyone's Off to the Rave While I Stare at the Sun Till My Colours Fade",
+   "title": "Natasja Askelund / Feed Me",
    "venue": "Galleri Opdahl",
    "actor": "Galleri Opdahl",
    "cat": "kunst",
    "url": "https://www.galleriopdahl.no/",
-   "img": "https://cdn.sanity.io/images/3tt2t14f/production/72603f0296154fa6d683c0dacbf22577f7e75e32-1350x965.jpg?w=400",
+   "img": "https://cdn.sanity.io/images/3tt2t14f/production/d1eaf1d6e18abbcfc3269a135c1a4b61e28aa939-1376x912.jpg?w=400",
    "desc": "",
    "tags": "exhibition"
   }
@@ -816,18 +816,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-22",
-   "t": "11:00",
-   "title": "Stavanger Cardshow i Ølhallene",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "konsert",
-   "url": "https://www.touofficial.com/events/stavanger-cardshow-i-lhallene/ZHJUGXpvVO",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_P1vzcCwgh",
-   "desc": "Stavanger Cardshow ønsker å skape en helg hvor både erfarne samlere, helt ferske entusiaster og familier kan møtes, jakte på nye kort, gjøre gode handler, trade med andre – eller bare oppleve samlermiljøet på nært hold.",
-   "tags": "trading kort nærmiljø"
-  },
   {
    "date": "2026-11-24",
    "t": "19:00",
