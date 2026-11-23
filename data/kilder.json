@@ -76,7 +76,7 @@
  "opdahl": [
   {
    "date": "2026-12-04",
-   "until": "2027-01-22",
+   "until": "2027-01-31",
    "t": "",
    "title": "Natasja Askelund / Feed Me",
    "venue": "Galleri Opdahl",
@@ -349,11 +349,11 @@
   {
    "date": "2026-11-27",
    "t": "21:00",
-   "title": "Miss Wednesday",
+   "title": "Miss Wednesday + support: Roadside Lillies",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17244-miss-wednesday",
+   "url": "https://www.folken.no/shows/17244-miss-wednesday--support-roadside-lillies",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017244/mediumwednes-lt.jpg.jpg",
    "desc": "Øko-folk-pop som bobler over av framtidstro, positivitet og glede.",
    "tags": "konsert"
@@ -421,11 +421,11 @@
   {
    "date": "2026-12-04",
    "t": "21:00",
-   "title": "Kanaan",
+   "title": "Kanaan + support: Matriark",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17250-kanaan",
+   "url": "https://www.folken.no/shows/17250-kanaan--support-matriark",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017250/mediumkanaan-lt.jpg.jpg",
    "desc": "I 2026 feirer Kanaan 10 år som band med sitt tiende album. Kanaan borer seg enda dypere ned i de forskjellige stilartene som til sammen har utgjort musikken deres.",
    "tags": "konsert"
@@ -489,18 +489,6 @@
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017199/mediumJulepubkor_krediter_foto_PaI__l_Christensen_Stavanger_Aftenblad.jpg.jpg",
    "desc": "",
    "tags": "konsert"
-  },
-  {
-   "date": "2026-12-08",
-   "t": "20:00",
-   "title": "FolkenQuiz - hver tirsdag!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17221-folkenquiz-hver-tirsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017221/mediumFolkenquiz%20Linticket.jpg.jpg",
-   "desc": "Den tradisjonsrike quizen på Folken ruller hver tirsdag i Akvariet, Folkens fine bar i 1. etasje.",
-   "tags": "quiz"
   },
   {
    "date": "2026-12-09",
@@ -1079,6 +1067,18 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_6_laERexN",
    "desc": "The Clumps er et alternativt rockeband fra Sandnes med base i Bergen. 22-åringene har vunnet eggstockfestivalen, blitt månedens urørt på P3 og ble kåret til årets håp (GAFFA). Etter kritikerroste opptredener på en rekke festivaler som bl.a Tons of Rock, Bergenfest, Eurosonic i Nederland og Soho Call",
    "tags": "rock konsert theclumps"
+  },
+  {
+   "date": "2027-03-07",
+   "t": "18:00",
+   "title": "Insimul: Aequilibria",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/insimul-aequilibria/AD4yF6TBOk",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_Jw5-Utuhi",
+   "desc": "Vi har prøvd å sette sammen et program med utgangspunkt i verket Aequilibria av Anna Thorvaldsdóttir. Den islandske komponisten skriver vakre klanglandskap med et særegent tonespråk. Vi spiller også Sirenengesang av Bent Sørensen og Coyote Blues av Magnus Lindberg.",
+   "tags": "sinfonietta samtid konsert"
   },
   {
    "date": "2027-04-13",
