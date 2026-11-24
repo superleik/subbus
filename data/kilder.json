@@ -117,18 +117,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-23",
-   "t": "19:30",
-   "title": "Concors - releasekonsert for Nordic Swimming",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/concors-releasekonsert-for-nordic-swimming",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/134202d0-16be-4548-90a3-bbce81709a83/concors+nettside.jpg",
-   "desc": "Arrangør: Concors og Litthusstvg Kjøp billett",
-   "tags": ""
-  },
-  {
    "date": "2026-11-24",
    "t": "19:00",
    "title": "Åpen Mic: November",
@@ -274,18 +262,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-23",
-   "t": "19:00",
-   "title": "Improworkshop med Stavanger Impro - Gratis!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17310-improworkshop-med-stavanger-impro-gratis",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017310/mediumWorkshop-lt.jpg.jpg",
-   "desc": "Hiv deg rundt og bli med Stavanger Impro på denne deilige galskapen!",
-   "tags": "teater"
-  },
   {
    "date": "2026-11-24",
    "t": "20:00",
