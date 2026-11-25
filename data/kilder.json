@@ -117,18 +117,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-24",
-   "t": "19:00",
-   "title": "Åpen Mic: November",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/aapen-mic-poesi-september-8kcph-cggty",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/0cdadbc8-5803-4c4f-a710-d3c5533e562a/%C3%A5pen+mic+oppdatert.jpg",
-   "desc": "Arrangør: Litteraturhuset i Stavanger Gratis og ingen påmelding",
-   "tags": ""
-  },
-  {
    "date": "2026-11-25",
    "t": "19:00",
    "title": "Fra Drøm til Debut",
@@ -274,18 +262,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-24",
-   "t": "20:00",
-   "title": "FolkenQuiz - hver tirsdag!",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "annet",
-   "url": "https://www.folken.no/shows/17219-folkenquiz-hver-tirsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017219/mediumFolkenquiz%20Linticket.jpg.jpg",
-   "desc": "Den tradisjonsrike quizen på Folken ruller hver tirsdag i Akvariet, Folkens fine bar i 1. etasje.",
-   "tags": "quiz"
-  },
   {
    "date": "2026-11-25",
    "t": "19:30",
@@ -792,18 +768,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-24",
-   "t": "19:00",
-   "title": " Informasjonsmøte med scenekunstfeltet i Stavanger ",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "scene",
-   "url": "https://www.touofficial.com/events/informasjonsm-te-med-scenekunstfeltet-i-stavanger/pND1VDUmRp",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_JOsRM3368",
-   "desc": "Velkommen til møte om Kulturrådets ordningar for scenekunst. ",
-   "tags": "scenekunst møte fagprogram"
-  },
   {
    "date": "2026-11-26",
    "t": "19:00",
