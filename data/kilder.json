@@ -117,18 +117,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-25",
-   "t": "19:00",
-   "title": "Fra Drøm til Debut",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/fra-drm-til-debut",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793353769990-B0NJWTYO7TNBYS6SC3HK/fra+dr%C3%B8m+til+debut+nettside.jpg",
-   "desc": "Arrangør: Ungt Programråd Litteraturhuset Kjøp billett",
-   "tags": ""
-  },
-  {
    "date": "2026-11-26",
    "t": "19:00",
    "title": "Lansering: “Kjelkemarsjen” av Nils Helge Sørgård og “Innenfor 2” av Erling Roland",
@@ -262,30 +250,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-25",
-   "t": "19:30",
-   "title": "Filmklubb: Black Dog (China, 2024)",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "film",
-   "url": "https://www.folken.no/shows/17185-filmklubb-black-dog-china-224",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017185/medium07-lt.jpg.jpg",
-   "desc": "",
-   "tags": "film"
-  },
-  {
-   "date": "2026-11-25",
-   "t": "20:00",
-   "title": "Standup i Grottene hver onsdag",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17238-standup-i-grottene-hver-onsdag",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017238/mediumGrottene-Folken.jpg.jpg",
-   "desc": "\"De nyaste gjør sitt besta, og de beste gjør sitt nyaste!\"",
-   "tags": "comedy"
-  },
   {
    "date": "2026-11-26",
    "t": "20:00",
@@ -445,11 +409,11 @@
   {
    "date": "2026-12-08",
    "t": "19:00",
-   "title": "Julepubkor med Nils Christian Fossdal",
+   "title": "Julepubkor med Nils Christian Fossdal - UTSOLGT",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17199-julepubkor-med-nils-christian-fossdal",
+   "url": "https://www.folken.no/shows/17199-julepubkor-med-nils-christian-fossdal-utsolgt",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017199/mediumJulepubkor_krediter_foto_PaI__l_Christensen_Stavanger_Aftenblad.jpg.jpg",
    "desc": "",
    "tags": "konsert"
