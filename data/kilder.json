@@ -142,7 +142,7 @@
   },
   {
    "date": "2026-11-29",
-   "t": "18:00",
+   "t": "19:00",
    "title": "KØDD jam",
    "venue": "Litteraturhuset",
    "actor": "Stavanger Litteraturhus",
@@ -1019,6 +1019,66 @@
    "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_8GNc_px6R",
    "desc": "Velkommen til en dag full av musikk, kunst, kultur og smakfulle matopplevelser fra hele verden!",
    "tags": "barn/familie kulturdag"
+  },
+  {
+   "date": "2027-06-02",
+   "t": "12:00",
+   "title": "Wonderful world",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/wonderful-world/6yV6KQ8kZi",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_x2Tu8qi0D",
+   "desc": "Wonderful World – den nordiske festivalen for filosofi og vitenskap arrangeres for 5. gang i 2027!",
+   "tags": "filosofi vitenskap undring"
+  },
+  {
+   "date": "2027-06-03",
+   "t": "12:00",
+   "title": "Wonderful world",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/wonderful-world/euuKDklOy6",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_k7AMOjIkb",
+   "desc": "Wonderful World – den nordiske festivalen for filosofi og vitenskap arrangeres for 5. gang i 2027!",
+   "tags": "filosofi vitenskap undring"
+  },
+  {
+   "date": "2027-06-04",
+   "t": "12:00",
+   "title": "Wonderful world",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/wonderful-world/WKV2Fn9kxK",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_k7AMOjIkb",
+   "desc": "Wonderful World – den nordiske festivalen for filosofi og vitenskap arrangeres for 5. gang i 2027!",
+   "tags": "filosofi vitenskap undring"
+  },
+  {
+   "date": "2027-06-05",
+   "t": "12:00",
+   "title": "Wonderful world",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/wonderful-world/BbLOKx7nGV",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_k7AMOjIkb",
+   "desc": "Wonderful World – den nordiske festivalen for filosofi og vitenskap arrangeres for 5. gang i 2027!",
+   "tags": "filosofi vitenskap undring"
+  },
+  {
+   "date": "2027-06-23",
+   "t": "15:00",
+   "title": "Sankthansfeiring",
+   "venue": "Tou",
+   "actor": "Tou Scene",
+   "cat": "annet",
+   "url": "https://www.touofficial.com/events/sankthansfeiring/NngGCphlt3",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_HIJERuPrp",
+   "desc": "Tradisjonen tro inviterer Tou til sankthansfeiring i Østre bydel! Vi samler små og store til en hyggelig sommerkveld, med fellesskap og ekte sankthansstemning.",
+   "tags": "sankhans bonfire bydelsfest"
   }
  ],
  "jazzforum": [
