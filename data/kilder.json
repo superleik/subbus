@@ -105,18 +105,6 @@
  ],
  "litteraturhuset": [
   {
-   "date": "2026-11-27",
-   "t": "10:00",
-   "title": "Drop-in søknadsveiledning med kulturavdelingen",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/drop-in-sknadsveiledning-med-kulturavdelingen",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1795532275351-XIP4NLIDWM19AZ1EBNIZ/%C3%85pent_STVG_Kultur_Tord_F_Paulsen.jpg",
-   "desc": "Arrangør: Kulturavdelingen, Stavanger kommune",
-   "tags": ""
-  },
-  {
    "date": "2026-11-29",
    "t": "19:00",
    "title": "KØDD jam",
@@ -174,6 +162,18 @@
    "url": "https://www.litthusstvg.no/program/julemarked-1",
    "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793009665296-6SZJC6S7K83MAXG7F1CU/855833306_1963370038333911_8625620840489210167_n.jpg",
    "desc": "Arrangør: Elefant og Litteraturhuset i Stavanger",
+   "tags": ""
+  },
+  {
+   "date": "2026-12-08",
+   "t": "18:00",
+   "title": "Samlesing",
+   "venue": "Litteraturhuset",
+   "actor": "Stavanger Litteraturhus",
+   "cat": "ord",
+   "url": "https://www.litthusstvg.no/program/samlesing-fphed",
+   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/1793364786820-DD2VGY0WES2POYTMDTU3/unsplash-image-7C2JUQRJ5hE.jpg",
+   "desc": "Arrangør: Litteraturhuset i Stavanger Påmelding",
    "tags": ""
   },
   {
@@ -301,11 +301,11 @@
   {
    "date": "2026-12-03",
    "t": "20:00",
-   "title": "Bigbang - UTSOLGT!",
+   "title": "Bigbang",
    "venue": "Folken",
    "actor": "Folken",
    "cat": "konsert",
-   "url": "https://www.folken.no/shows/17353-bigbang-utsolgt",
+   "url": "https://www.folken.no/shows/17353-bigbang",
    "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017353/mediumbigbang2026-lt-TORS.jpg.jpg",
    "desc": "",
    "tags": "konsert"
@@ -734,27 +734,27 @@
   },
   {
    "date": "2026-12-04",
-   "t": "18:30",
-   "title": "INNI (nummer 2)",
+   "t": "19:00",
+   "title": "Inni (nummer 2)",
    "venue": "Tou",
    "actor": "Tou Scene",
    "cat": "scene",
-   "url": "https://www.touofficial.com/events/inni-nummer-2/LjBF267VO3",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/stavanger-friteater-presenterer-inni-nummer-2-16598_5rUrqxK_LU",
+   "url": "https://www.touofficial.com/events/inni-nummer-2/hsDDlmel9C",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wExD7ZhXe",
    "desc": "INNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist at berre han skal sitta att i driten?",
-   "tags": "scenekunst"
+   "tags": "teater scenekunst"
   },
   {
    "date": "2026-12-05",
-   "t": "18:30",
-   "title": "INNI (nummer 2)",
+   "t": "19:00",
+   "title": "Inni (nummer 2)",
    "venue": "Tou",
    "actor": "Tou Scene",
    "cat": "scene",
-   "url": "https://www.touofficial.com/events/inni-nummer-2/3AAcy1SxHu",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/stavanger-friteater-presenterer-inni-nummer-2-16599_f0fYfpsc3",
-   "desc": "Stavanger Friteater presenterer INNI (nummer 2)  \n  \nINNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist ",
-   "tags": "scenekunst"
+   "url": "https://www.touofficial.com/events/inni-nummer-2/SXIFWa6xPi",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wExD7ZhXe",
+   "desc": "INNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist at berre han skal sitta att i driten?",
+   "tags": "teater scenekunst"
   },
   {
    "date": "2026-12-05",
@@ -770,27 +770,27 @@
   },
   {
    "date": "2026-12-11",
-   "t": "18:30",
-   "title": "INNI (nummer 2)",
+   "t": "19:00",
+   "title": "Inni (nummer 2)",
    "venue": "Tou",
    "actor": "Tou Scene",
    "cat": "scene",
-   "url": "https://www.touofficial.com/events/inni-nummer-2/SGxye619B1",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/stavanger-friteater-presenterer-inni-nummer-2-16600_C67iIIb9h",
-   "desc": "Stavanger Friteater presenterer INNI (nummer 2)  \n  \nINNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist ",
-   "tags": "scenekunst"
+   "url": "https://www.touofficial.com/events/inni-nummer-2/2LZDg439Eu",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wExD7ZhXe",
+   "desc": "INNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist at berre han skal sitta att i driten?",
+   "tags": "teater scenekunst"
   },
   {
    "date": "2026-12-12",
-   "t": "18:30",
-   "title": "INNI (nummer 2)",
+   "t": "19:00",
+   "title": "Inni (nummer 2)",
    "venue": "Tou",
    "actor": "Tou Scene",
    "cat": "scene",
-   "url": "https://www.touofficial.com/events/inni-nummer-2/SGC1skx9QW",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/stavanger-friteater-presenterer-inni-nummer-2-16601_XjIv6Zsvx",
-   "desc": "Stavanger Friteater presenterer INNI (nummer 2)  \n  \nINNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist ",
-   "tags": "scenekunst"
+   "url": "https://www.touofficial.com/events/inni-nummer-2/f4S6I83vaD",
+   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_wExD7ZhXe",
+   "desc": "INNI (nummer 2) handlar om Pål og Geir, to litt for gamle gutar som har gitt opp å kjempa mot forfallet. No har Geir flytta inn med ein kjærast, og har for fyrste gong på mange år noko å tapa. Pål er att åleine, og det kan vel ikkje vera rettvist at berre han skal sitta att i driten?",
+   "tags": "teater scenekunst"
   },
   {
    "date": "2026-12-17",
