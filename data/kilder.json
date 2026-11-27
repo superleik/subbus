@@ -90,18 +90,6 @@
  ],
  "kunsthall": [
   {
-   "date": "2026-11-26",
-   "t": "18:00",
-   "title": "Film Screening with Sølvberget Cinematek",
-   "venue": "Kunsthall Stavanger",
-   "actor": "Kunsthall Stavanger",
-   "cat": "kunst",
-   "url": "https://kunsthallstavanger.no/en/events/film-screening-with-sølvberget-cinemateket-and-kunsthall-stavanger",
-   "img": "https://storage.lfcdn.com/lf-kunsthallstavanger-prod/kunsthallstavanger.no/events/film-screening-with-sølvberget-cinemateket-and-kunsthall-stavanger/header-media/images-original.webp?width=400",
-   "desc": "",
-   "tags": ""
-  },
-  {
    "date": "2026-09-17",
    "until": "2027-01-10",
    "t": "",
@@ -116,18 +104,6 @@
   }
  ],
  "litteraturhuset": [
-  {
-   "date": "2026-11-26",
-   "t": "19:00",
-   "title": "Lansering: “Kjelkemarsjen” av Nils Helge Sørgård og “Innenfor 2” av Erling Roland",
-   "venue": "Litteraturhuset",
-   "actor": "Stavanger Litteraturhus",
-   "cat": "ord",
-   "url": "https://www.litthusstvg.no/program/3ohi7xn11dhmcnpusgjkkhbx8nllpz",
-   "img": "https://images.squarespace-cdn.com/content/v1/67c94eb1d576327f0724405f/471263f4-7d0f-4658-85a3-a219b5dbffb2/LANSERING+Erling+Roland+og+Nils+Helge+S%C3%B8rg%C3%A5rd+i+samtale+med+Boktimmy+om+krig%2C+motstand%2C+h%C3%A5p+og+menneskelige+valg.jpg",
-   "desc": "Arrangør: Sørgård og Roland Gratis",
-   "tags": ""
-  },
   {
    "date": "2026-11-27",
    "t": "10:00",
@@ -250,18 +226,6 @@
   }
  ],
  "folken": [
-  {
-   "date": "2026-11-26",
-   "t": "20:00",
-   "title": "Kalandra + support: Olga Amalie",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17283-kalandra--support-olga-amalie",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017283/mediumkalandra-lt.jpg.jpg",
-   "desc": "I 2026 feirer Kalandra sitt 15-årsjubileum, og den norsk-svenske kvartetten fortsetter å trollbinde publikum over hele Europa.",
-   "tags": "konsert"
-  },
   {
    "date": "2026-11-27",
    "t": "20:00",
@@ -732,18 +696,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-26",
-   "t": "19:00",
-   "title": "Nabolagsquiz med Øydis på Ry",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "annet",
-   "url": "https://www.touofficial.com/events/nabolagsquiz-med-ydis-p-ry/OkLFa95DE5",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/venues/event_rWA1lGdjl",
-   "desc": "Nabolagsquiz holdes av ingen ringere enn Øydis Rake Hegg, som mange kanskje kjenner som en dyktig kunnskapsformidler på blant annet Martinique",
-   "tags": "quiz"
-  },
   {
    "date": "2026-11-27",
    "t": "20:00",
