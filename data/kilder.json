@@ -227,30 +227,6 @@
  ],
  "folken": [
   {
-   "date": "2026-11-27",
-   "t": "20:00",
-   "title": "Standup på Folken: Sesongavslutning",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "scene",
-   "url": "https://www.folken.no/shows/17272-standup-paa-folken-sesongavslutning",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017272/mediumklubbk-lt.jpg.jpg",
-   "desc": "Standup Stavanger inviterer til sesongavslutning.",
-   "tags": "comedy"
-  },
-  {
-   "date": "2026-11-27",
-   "t": "21:00",
-   "title": "Miss Wednesday + support: Roadside Lillies",
-   "venue": "Folken",
-   "actor": "Folken",
-   "cat": "konsert",
-   "url": "https://www.folken.no/shows/17244-miss-wednesday--support-roadside-lillies",
-   "img": "https://www4.linticket.no/bilder/Folken/arrangementer_resized/00000017244/mediumwednes-lt.jpg.jpg",
-   "desc": "Øko-folk-pop som bobler over av framtidstro, positivitet og glede.",
-   "tags": "konsert"
-  },
-  {
    "date": "2026-11-30",
    "t": "19:00",
    "title": "Improworkshop med Stavanger Impro - Gratis!",
@@ -696,18 +672,6 @@
   }
  ],
  "tou": [
-  {
-   "date": "2026-11-27",
-   "t": "20:00",
-   "title": "Flor",
-   "venue": "Tou",
-   "actor": "Tou Scene",
-   "cat": "konsert",
-   "url": "https://www.touofficial.com/events/flor/FFH0tR1hfz",
-   "img": "https://ik.imagekit.io/mfgbmrqfuvo/events/flor-16551_-h5jtDEs0",
-   "desc": "Flor er et utforskende jazzband fra Stavanger, løftet fram av komponist og bandleder Marie Kvale Vikingstad.  \n  \nBandet feirer debut-EPen By Green på Loftet på Tou. Med elektroniske lydlandskap og improvisasjon skaper [Flor](https://www.instagram.com/florband/) et stemningsfullt uttrykk der enkle m",
-   "tags": "jazz"
-  },
   {
    "date": "2026-11-28",
    "t": "20:00",
